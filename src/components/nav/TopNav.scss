@@ -1,0 +1,13 @@
+.topNav{
+    height: 80px;
+    width: 100%;
+    background-color: #010920; 
+
+    &__logo {
+        height: 80px;
+        
+        img {
+            height: 100%;
+        }
+    }
+}

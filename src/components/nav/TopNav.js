@@ -1,9 +1,12 @@
 import React from 'react'
+import Logo from "../../assets/Logo.png"
+import { Link } from "react-router-dom" 
+import "./TopNav.scss"
 
 function TopNav() {
     return (
-        <div>
-            <h1> Nav </h1>
+        <div className="topNav">
+            <Link to="/" className="topNav__logo"> <img src={Logo}/> </Link>
         </div>
     )
 }
