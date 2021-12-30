@@ -55,6 +55,13 @@
   }
 }
 
+@media screen and (max-width: $mid-largeBreak) {
+  .topNav {
+    font-size: 16px;
+  }
+}
+
+
 @media screen and (max-width: $medium-break) {
   .topNav {
     display: none;

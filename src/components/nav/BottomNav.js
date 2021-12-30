@@ -48,8 +48,8 @@ function BottomNav() {
         </ul>
       </div>
       <ul className="bottomNav__collapsed">
-      <li className="bottomNav__collapsedInfo"> <span onClick={infoClickHandler}>My Info</span></li>
-      <li className="bottomNav__collapsedContact"> <span onClick={contactClickHandler}>Find me on ..</span></li>
+      <li className="bottomNav__collapsedInfo"> <span onClick={infoClickHandler}>{infoMenu ? <> &#x2193; </> : <> &#x2191; </>} My Info 	</span></li>
+      <li className="bottomNav__collapsedContact"> <span onClick={contactClickHandler}> {contactMenu ? <> &#x2193; </> : <> &#x2191; </>} Find me on .. </span></li>
       </ul>
     </div>
   );
