@@ -1,92 +1,84 @@
-@import '../../variables.scss' ;
+@import "../../variables.scss";
 
-.bottomNav{
-    display: none;
-    color: $light-pink;
-    background-color: $dark-blue;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    font-size: 20px;
+.bottomNav {
+  display: none;
+  color: $light-pink;
+  background-color: $dark-blue;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-size: 20px;
 }
 
-@media screen and (max-width: $medium-break){
-    .bottomNav{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-around;
-        -webkit-box-shadow: -1px 2px 12px -4px ivory;
-        box-shadow: -1px 2px 12px -4px ivory;
+@media screen and (max-width: $medium-break) {
+  .bottomNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
 
-        &__collapsed {
-            width: 98%;
-            margin: 0;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-top: 1px solid ivory;
-            border-bottom: 1px solid ivory;
-
-        }
-
-        &__collapsedInfo, &__collapsedContact{
-            width: 48%;
-            text-align: center;
-            display: inline-block;
-            
-
-            // &:before, &:after{
-            //     background-color: ivory;
-            //     content: "";
-            //     display: inline-block;
-            //     height: 1px;
-            //     position: relative;
-            //     vertical-align: middle;
-            //     width: 100%;
-            //     margin-left: 10px;    
-            // }
-        }
-
-        &__info , &__contact{
-            display: none;
-
-            &-active{
-                display: block;
-                position: absolute;
-                bottom: 80px;
-                background-color: $dark-blue;
-                width: 100%;
-                text-align: center; 
-                
-                a {
-                    color: $light-pink;
-
-                    &:hover{
-                        color: ivory;
-                        text-shadow: 0 0 2px #fff;
-                    }
-                }
-
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 0;
-                }
-
-                li {
-                    margin-bottom: 10px;
-                    background-color: $light-blue;
-                    padding: 5px;
-                    border-radius: 8px;
-                    width: 95%;
-                }
-
-
-            }
-        }
+    &__collapsed {
+      width: 98%;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid ivory;
+      border-bottom: 1px solid ivory;
     }
 
+    &__collapsedInfo,
+    &__collapsedContact {
+      width: 48%;
+      text-align: center;
+      display: inline-block;
 
+      span {
+        cursor: pointer;
+
+        &:hover {
+          color: ivory;
+          text-shadow: $bright-hover;
+        }
+      }
+    }
+
+    &__info,
+    &__contact {
+      display: none;
+
+      &-active {
+        display: block;
+        position: absolute;
+        bottom: 80px;
+        background-color: $dark-blue;
+        width: 100%;
+        text-align: center;
+
+        a {
+          color: $light-pink;
+
+          &:hover {
+            color: ivory;
+            text-shadow: $bright-hover;
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+        }
+
+        li {
+          margin-bottom: 10px;
+          background-color: $light-blue;
+          padding: 5px;
+          border-radius: 8px;
+          width: 95%;
+        }
+      }
+    }
+  }
 }

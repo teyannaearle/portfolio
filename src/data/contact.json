@@ -1,18 +1,18 @@
 [
     {
         "url": "",
-        "text" : "git"
+        "text" : "Linked In"
     },
     {
         "url": "",
-        "text" : "linked"
+        "text" : "Twitter"
     },
     {
         "url": "",
-        "text" : "twitter"
+        "text" : "Github"
     },
     {
         "url": "",
-        "text" : "email"
+        "text" : "An email message"
     }
 ]
