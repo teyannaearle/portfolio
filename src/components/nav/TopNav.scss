@@ -1,7 +1,9 @@
+@import '../../variables.scss' ;
+
 .topNav{
     height: 80px;
     width: 100%;
-    background-color: #010920; 
+    background-color: $dark-blue; 
     display: flex;
     font-size: 20px;
     position: relative;
@@ -40,7 +42,7 @@
                 }
 
             a {
-                color: #e9d3d7;
+                color: $light-pink;
 
                 &:hover{
                     color: ivory;
@@ -52,3 +54,5 @@
         }
     }
 }
+
+
