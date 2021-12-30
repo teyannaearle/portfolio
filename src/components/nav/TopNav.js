@@ -6,7 +6,7 @@ import "./TopNav.scss"
 function TopNav() {
     return (
         <div className="topNav">
-            <Link to="/" className="topNav__logo"> <img src={Logo}/> </Link>
+            <Link to="/" className="topNav__logo"> <img src={Logo} alt="logo"/> </Link>
             <div className="topNav__menuItems">
                <ul>
                 <li><Link to="/about"> who am i ? </Link></li>
