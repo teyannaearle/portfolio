@@ -2,12 +2,53 @@
     height: 80px;
     width: 100%;
     background-color: #010920; 
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    align-items: center;
 
     &__logo {
         height: 80px;
-        
+        display: inline-block;
         img {
             height: 100%;
+        }
+    }
+
+    &__menuItems{
+        width: 100%;
+
+        ul{
+           width: 100%;
+           display: flex;
+           justify-content: space-around;
+           text-align: center;
+           padding: 0;
+
+           li{
+                width: 100%;
+
+                &:before, &:after{
+                    background-color: ivory;
+                    content: "";
+                    display: inline-block;
+                    height: 1px;
+                    position: relative;
+                    vertical-align: middle;
+                    width: 100%;
+                    margin-left: 10px;    
+                }
+
+            a {
+                color: #e9d3d7;
+
+                &:hover{
+                    color: ivory;
+                    text-shadow: 0 0 2px #fff;
+                }
+
+            }
+           }
         }
     }
 }
