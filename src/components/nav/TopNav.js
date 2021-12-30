@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom" 
 import Logo from "../../assets/Logo.png"
+import info from "../../data/info.json"
 import "./TopNav.scss"
 
 function TopNav() {
@@ -9,9 +10,11 @@ function TopNav() {
             <Link to="/" className="topNav__logo"> <img src={Logo} alt="logo"/> </Link>
             <div className="topNav__menuItems">
                <ul>
-                <li><Link to="/about"> who am i ? </Link></li>
-                <li><Link to="/projects" className="topNav__menuItems-middle"> what have i made ? </Link></li>
-                <li><Link to="/contact"> how can we connect ? </Link></li>
+                   {info.map((item, key) => {
+                       return(
+                        <li key={key}><Link to={item.url}>{item.text}</Link></li>
+                       )
+                   })}
                </ul>
             </div>
         </div>

@@ -1,0 +1,14 @@
+[
+    {
+        "url": "/about",
+        "text" : "who am i ?"
+    },
+    {
+        "url": "/projects",
+        "text" : "what have i made ?"
+    },
+    {
+        "url": "/contact",
+        "text" : "how can we connect ?"
+    }
+]

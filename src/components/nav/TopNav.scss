@@ -8,6 +8,9 @@
     font-size: 20px;
     position: relative;
     align-items: center;
+    // -webkit-box-shadow: -1px 2px 20px -4px ivory;
+    -webkit-box-shadow: -1px 2px 18px -4px ivory;
+    box-shadow: -1px 2px 18px -4px ivory;
 
     &__logo {
         height: 80px;
@@ -21,25 +24,29 @@
         width: 100%;
 
         ul{
-           width: 100%;
+           width: 98%;
            display: flex;
            justify-content: space-around;
+           justify-content: center;
            text-align: center;
-           padding: 0;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           border-top: 1px solid ivory;
+           border-bottom: 1px solid ivory;
 
            li{
                 width: 100%;
 
-                &:before, &:after{
-                    background-color: ivory;
-                    content: "";
-                    display: inline-block;
-                    height: 1px;
-                    position: relative;
-                    vertical-align: middle;
-                    width: 100%;
-                    margin-left: 10px;    
-                }
+                // &:before, &:after{
+                //     background-color: ivory;
+                //     content: "";
+                //     display: inline-block;
+                //     height: 1px;
+                //     position: relative;
+                //     vertical-align: middle;
+                //     width: 100%;
+                //     margin-left: 10px;    
+                // }
 
             a {
                 color: $light-pink;
@@ -56,3 +63,14 @@
 }
 
 
+@media screen and (max-width: $large-break){
+    .topNav{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: $medium-break){
+    .topNav{
+        display: none;
+    }
+}
