@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import info from "../../data/info.json";
-import contact from "../../data/contact.json";
+import contact from "../../data/contact.js";
 import "./BottomNav.scss";
 
 function BottomNav() {
@@ -41,7 +41,7 @@ function BottomNav() {
           {contact.map((item, key) => {
             return (
               <li key={key}>
-                <Link to={item.url} onClick={()=> setContactMenu(false)}>{item.text}</Link>
+                <Link to={item.url} onClick={()=> setContactMenu(false)}>{item.icon}</Link>
               </li>
             );
           })}
