@@ -39,6 +39,8 @@
         &:hover {
           color: ivory;
           text-shadow: $bright-hover;
+          display: inline-block;
+          transform: scale(1.1);
         }
       }
     }
@@ -54,15 +56,6 @@
         background-color: $dark-blue;
         width: 100%;
         text-align: center;
- 
-        a {
-          color: $light-pink;
-
-          &:hover {
-            color: ivory;
-            text-shadow: $bright-hover;
-          }
-        }
 
         ul {
           display: flex;
@@ -83,6 +76,16 @@
           width: 90%;
           -webkit-box-shadow: 2px 2px 6px -3px $light-pink;
           box-shadow: 2px 2px 6px -3px $light-pink;
+
+          a{
+            display: block;
+            width: 100%;
+          }
+          
+          &:hover{
+            display: inline-block;
+            transform: translateY(3px);
+          }
         }
       }
     }

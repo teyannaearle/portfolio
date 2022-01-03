@@ -3,22 +3,22 @@ import { MdEmail } from "react-icons/md"
 
 const contact = [
     {
-        url: "",
+        url: "https://www.linkedin.com/in/teyanna-earle-702021202/",
         text: "Linked In",
         icon: <FaLinkedinIn />
     },
     {
-        url: "",
+        url: "https://twitter.com/TeyannaEarle",
         text: "Twitter",
         icon: <FaTwitter />
     },
     {
-        url: "",
+        url: "https://github.com/teyannaearle",
         text: "Github",
         icon: <FaGithub />
     },
     {
-        url: "",
+        url: "mailto:teyannaearle@gmail.com",
         text: "An email message",
         icon: <MdEmail />
     }
