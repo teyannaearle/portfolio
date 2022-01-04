@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom" 
-import Logo from "../../assets/Logo.png"
-import info from "../../data/info.json"
+import Logo from "../../../assets/Logo.png"
+import info from "../../../data/info.json"
 import "./TopNav.scss"
 
 function TopNav() {

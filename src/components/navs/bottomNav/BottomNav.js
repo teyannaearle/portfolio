@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import info from "../../data/info.json";
-import contact from "../../data/contact.js";
+import info from "../../../data/info.json";
+import contact from "../../../data/contact.js";
 import "./BottomNav.scss";
 
 function BottomNav() {

@@ -1,6 +1,5 @@
 import React from 'react'
-import contact from "../../data/contact"
-import { Link } from "react-router-dom"
+import contact from "../../../data/contact"
 import "./sideNav.scss"
 
 function SideNav() {
