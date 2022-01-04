@@ -84,7 +84,10 @@
           
           &:hover{
             display: inline-block;
-            transform: translateY(3px);
+          }
+
+          &:active{
+            transform: translateY(2px);
           }
         }
       }
