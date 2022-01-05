@@ -2,10 +2,18 @@
 
 html,
 body,
-.root {
+#root,
+.App {
   margin: 0;
   padding: 0;
   color: $light-pink;
+  min-height: 100vh;
+  width: 100%;
+  overflow:auto
+}
+
+.App{
+  position: relative;
 }
 
 ul {
@@ -29,7 +37,6 @@ a {
 html {
   background: $dark-blue;
   position: relative;
-  height: 100vh;
   font-family: $courgette;
 
   &:before {
@@ -44,3 +51,4 @@ html {
     z-index: -1;
   }
 }
+

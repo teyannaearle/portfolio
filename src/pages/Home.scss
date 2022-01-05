@@ -1,8 +1,29 @@
 @import "./../variables.scss";
 
 .homePage {
-    margin-left: 10%;
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  bottom: 0px;
+  left: 10%;
+}
+
+@media screen and (max-width: 862px) {
+  .homePage {
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 65%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: $medium-break) {
+  .homePage {
+    margin-top: 0;
+    left: 0;
+    top: 40px;
+  }
 }

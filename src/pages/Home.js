@@ -1,11 +1,13 @@
 import React from 'react'
+import HomeContent from '../components/home/HomeContent'
+import HomePicture from "../components/home/HomePicture"
 import "./Home.scss"
 
 function Home() {
     return (
         <div className="homePage">
-            <div>side 1 </div>
-            <div>side 2</div>
+            <HomePicture />
+            <HomeContent />
         </div>
     )
 }
