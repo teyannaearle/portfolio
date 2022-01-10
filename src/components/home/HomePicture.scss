@@ -1,23 +1,31 @@
-.homePicWrapper{
-    display: flex;
-    align-items: center;
+.homePicWrapper {
+  display: flex;
+  align-items: center;
 
-    img{
-        width: 100%;
-    }
+  img {
+    width: 100%;
+    animation: fade-in 5s 1s forwards;
+    opacity: 0;
+  }
 }
 
-@media screen and (max-width: 862px){
-    .homePicWrapper{
-        width: 100%;
-        justify-content: center;
-
-       img{
-           width: initial;
-           height: 100%;
-
-       }
-       
-    }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
+@media screen and (max-width: 862px) {
+  .homePicWrapper {
+    width: 100%;
+    justify-content: center;
+
+    img {
+      width: initial;
+      height: 100%;
+    }
+  }
+}
