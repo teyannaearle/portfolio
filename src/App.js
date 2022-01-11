@@ -1,5 +1,6 @@
 import './App.scss';
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Link } from "react-router-dom"
+import Logo from "./assets/Logo.png"
 import TopNav from "./components/navs/topNav/TopNav"
 import SideNav from "./components/navs/sideNav/SideNav"
 import Footer from "./components/Footer"
@@ -18,6 +19,7 @@ function App() {
       <BottomNav />
 
     <div className="main"> 
+      <Link className="main__logoMin" to="/"><img src={Logo} alt="logo"/></Link>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

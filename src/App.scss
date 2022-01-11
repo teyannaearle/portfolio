@@ -58,7 +58,11 @@ html {
   right: 0px;
   bottom: 0px;
   left: 10%;
-  overflow:auto
+  overflow:auto;
+
+  &__logoMin{
+      display: none;
+  }
 }
 
 
@@ -67,6 +71,19 @@ html {
     top: 0px;
     left: 0;
     bottom: 80px;
+
+    &__logoMin{
+        display: block;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img{
+          height: 100%;
+          width: 100%;
+        }
+    }
    
   }
   
