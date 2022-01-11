@@ -58,12 +58,12 @@ html {
   right: 0px;
   bottom: 0px;
   left: 10%;
+  overflow:auto
 }
 
 
 @media screen and (max-width: $medium-break) {
   .main{
-    // top: 40px;
     top: 0px;
     left: 0;
     bottom: 80px;
