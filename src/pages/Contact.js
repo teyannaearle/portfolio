@@ -1,9 +1,12 @@
 import React from 'react'
+import Resume from "../components/Resume"
+import ContactForm from "../components/ContactForm"
 
 function Contact() {
     return (
-        <div>
-            
+        <div className="contactPage">
+            <Resume />
+            <ContactForm />
         </div>
     )
 }
