@@ -3,11 +3,13 @@ import "./AboutContent.scss";
 import aboutPicture from "../../assets/TeyBlue-3.png"
 import { RiMickeyFill } from "react-icons/ri";
 import { HiExternalLink } from "react-icons/hi"
+import Resume from "../Resume";
 
 function AboutContent() {
   return (
     <div  className="aboutContent">
-    <div className="aboutContent__resume">< a href = "https://docs.google.com/document/d/e/2PACX-1vTfIJ6wYZfBlTa4qz0y20zKXx0Hpma9aPw00OM7NWHBrWKdyBTXcbRZnwoQBe9iTX2_gEP2MuXzPnnH/pub"  target="_blank" rel="noreferrer"> View Resume <HiExternalLink /> </a></div>
+    {/* <Resume /> */}
+    {/* <div className="aboutContent__resume">< a href = "https://docs.google.com/document/d/e/2PACX-1vTfIJ6wYZfBlTa4qz0y20zKXx0Hpma9aPw00OM7NWHBrWKdyBTXcbRZnwoQBe9iTX2_gEP2MuXzPnnH/pub"  target="_blank" rel="noreferrer"> View Resume <HiExternalLink /> </a></div> */}
     <img src={aboutPicture} alt="teyanna" className="aboutContent__pic"/>
       <ul>
         <li className="aboutContent__question">Where am I from ?</li>

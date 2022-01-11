@@ -13,10 +13,14 @@
     }
 
     &__heading{
-        font-size: 45px;
+        font-size: 40px;
         margin-bottom: 10px ;
         margin-top: 20px;
         text-align: center;
+    }
+
+    p:nth-last-child(2){
+        font-size: 35px;
     }
 
     &__name {
@@ -32,12 +36,14 @@
         margin-left: 20%;
         margin-bottom: 70px;
         font-size: 20px;
+        font-family: serif;
+        letter-spacing: 1px;
     }
 
     &__explanations{
         font-size: 20px;
         color: ivory;
-        display: block;      
+        display: block; 
     }
 
     &__slideIn {
@@ -92,7 +98,10 @@
             text-align: left;
             padding-top: 20px;
             font-size: 35px;
+        }
 
+        p:nth-last-child(2){
+            font-size: 30px;
         }
 
         &__explanations{
@@ -111,6 +120,10 @@
         &__heading{
             font-size: 25px;
             text-align: center;
+        }
+
+        p:nth-last-child(2){
+            font-size: 23px;
         }
 
         &__pronounce{

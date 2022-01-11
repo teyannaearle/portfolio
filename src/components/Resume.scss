@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.resumeLink{
+    grid-column: 1 /span 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &:after{
+        content: "";
+        width: 30%;
+        height: 1px;
+        background-color: $light-pink;
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+// @media screen and (max-width: 1000px) {
+//     .resumeLink{
+//             &:after{
+//                 width: 30%;
+//             }
+//         }
+// }
+
+@media screen and (max-width: $medium-break){
+    .resumeLink{
+            margin-left: 80px;
+        }
+}
