@@ -88,3 +88,12 @@
         }
     }
 }
+
+@media screen and (max-width: $medium-break){
+    .aboutContent{
+
+        &__resume{
+            margin-left: 80px;
+        }}
+
+}
