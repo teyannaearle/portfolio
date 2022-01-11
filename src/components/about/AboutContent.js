@@ -7,7 +7,7 @@ import { HiExternalLink } from "react-icons/hi"
 function AboutContent() {
   return (
     <div  className="aboutContent">
-    <div className="aboutContent__resume">< a href = "https://docs.google.com/document/d/e/2PACX-1vTfIJ6wYZfBlTa4qz0y20zKXx0Hpma9aPw00OM7NWHBrWKdyBTXcbRZnwoQBe9iTX2_gEP2MuXzPnnH/pub"  target="_blank" > View Resume <HiExternalLink /> </a></div>
+    <div className="aboutContent__resume">< a href = "https://docs.google.com/document/d/e/2PACX-1vTfIJ6wYZfBlTa4qz0y20zKXx0Hpma9aPw00OM7NWHBrWKdyBTXcbRZnwoQBe9iTX2_gEP2MuXzPnnH/pub"  target="_blank" rel="noreferrer"> View Resume <HiExternalLink /> </a></div>
     <img src={aboutPicture} alt="teyanna" className="aboutContent__pic"/>
       <ul>
         <li className="aboutContent__question">Where am I from ?</li>
@@ -17,7 +17,7 @@ function AboutContent() {
 
         <li className="aboutContent__question">Where did I study ?</li>
         <p className="aboutContent__answer">
-          <a href="">Pursuit</a> : An intensive 12-month, Google funded,
+          <a href="https://www.pursuit.org/">Pursuit</a> : An intensive 12-month, Google funded,
           software engineering fellowship with a 9% acceptance rate.
         </p>
 
