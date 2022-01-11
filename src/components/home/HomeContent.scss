@@ -17,8 +17,6 @@
         margin-bottom: 10px ;
         margin-top: 20px;
         text-align: center;
-        animation: slide-in 1s 2s forwards;;
-        visibility: hidden;
     }
 
     &__name {
@@ -27,8 +25,6 @@
         font-weight: 700;
         letter-spacing: 5px;
         margin-bottom: 0px;
-        animation: slide-in 1s forwards;
-        visibility: hidden;
     }
     
     &__pronounce{
@@ -36,22 +32,40 @@
         margin-left: 20%;
         margin-bottom: 70px;
         font-size: 20px;
-        animation: slide-in 1s 1s forwards;
-        visibility: hidden;  
-
     }
 
     &__explanations{
         font-size: 20px;
-        animation: slide-in 1s 3s forwards;
-        visibility: hidden;
         color: ivory;
         display: block;      
     }
+
+    &__slideIn {
+        &-first{
+            animation: slide-in 1s forwards;
+            visibility: hidden;
+        }
+
+        &-second{
+            animation: slide-in 1s 1s forwards;
+            visibility: hidden;
+        }
+
+        &-second{
+            animation: slide-in 1s 1s forwards;
+            visibility: hidden;
+        }
+
+        &-third{
+            animation: slide-in 1s 2s forwards;
+            visibility: hidden;
+        }
+    }
 }
 
+
 @keyframes slide-in {
-    from {margin-left: 150%; width: 300%; visibility: hidden;}
+    from {margin-left: 150%; width: 100%; visibility: hidden;}
     to { width: 95% ; visibility: visible; }
     
 }
@@ -61,6 +75,7 @@
         height: max-content;
         width: 90%;
         margin: auto;
+        margin-top: 20px;
 
         &__name{
             text-align: center;
