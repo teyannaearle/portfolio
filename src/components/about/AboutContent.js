@@ -17,7 +17,7 @@ function AboutContent() {
 
         <li className="aboutContent__question">Where did I study ?</li>
         <p className="aboutContent__answer">
-          <a href="https://www.pursuit.org/">Pursuit</a> : An intensive 12-month, Google funded,
+          <a href="https://www.pursuit.org/" target="_blank" rel="noreferrer">Pursuit</a> : An intensive 12-month, Google funded,
           software engineering fellowship with a 9% acceptance rate.
         </p>
 
