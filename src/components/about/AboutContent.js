@@ -32,11 +32,11 @@ function AboutContent() {
           the lives of young minds in a fun and exciting way, through tech.
         </p>
 
-        <li className="aboutContent__question">What are my hobbies?</li>
+        <li className="aboutContent__question">What are my hobbies ?</li>
         <p className="aboutContent__answer">
           In my free time, I love watching all genres of movies and shows ( with
           an affinity to anything Disney <RiMickeyFill /> ), meditating,
-          traveling, listening and dancing to music, and experementing with new
+          traveling, listening and dancing to music, and experimenting with new
           ways to care for and style my natural curls !
         </p>
       </ul>
