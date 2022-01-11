@@ -8,7 +8,7 @@ function SideNav() {
         {contact.map((item, key) => {
           return (
             <li key={key}>
-              <a href={item.url} target="_blank" >{item.icon}</a>
+              <a href={item.url} target="_blank" rel="noreferrer">{item.icon}</a>
             </li>
           );
         })}

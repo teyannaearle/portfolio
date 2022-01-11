@@ -41,7 +41,7 @@ function BottomNav() {
           {contact.map((item, key) => {
             return (
               <li key={key}>
-                <a href={item.url} onClick={()=> setContactMenu(false)}>{item.icon}</a>
+                <a href={item.url} onClick={()=> setContactMenu(false)} target="_blank" rel="noreferrer">{item.icon}</a>
               </li>
             );
           })}
