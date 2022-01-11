@@ -9,6 +9,7 @@
   bottom: 0;
   font-size: 20px;
   z-index: 1;
+  color: $purple;
 }
 
 @media screen and (max-width: $medium-break) {
@@ -23,8 +24,10 @@
       margin: 0;
       padding-top: 10px;
       padding-bottom: 10px;
-      border-top: 1px solid ivory;
-      border-bottom: 1px solid ivory;
+      // border-top: 1px solid ivory;
+      // border-bottom: 1px solid ivory;
+      border-top: 1px solid $light-pink;
+      border-bottom: 1px solid $light-pink;
     }
 
     &__collapsedInfo,
@@ -38,7 +41,6 @@
 
         &:hover {
           color: ivory;
-          text-shadow: $bright-hover;
           display: inline-block;
           transform: scale(1.1);
         }
@@ -62,7 +64,6 @@
           flex-direction: column;
           align-items: center;
           margin: auto;
-          border-top: 1px solid ivory;
           width: 98%;
           padding-top: 30px;
         }

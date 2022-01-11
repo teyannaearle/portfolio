@@ -25,7 +25,6 @@
         font-weight: 700;
         letter-spacing: 5px;
         margin-bottom: 0px;
-        color: ivory;
         animation: slide-in 1s forwards;
         visibility: hidden;
     }
@@ -33,13 +32,14 @@
     &__pronounce{
         color: ivory;
         margin-left: 20%;
+        margin-bottom: 70px;
         font-size: 20px;
         animation: slide-in 1s 1s forwards;
         visibility: hidden;  
+
     }
 
     &__explanations{
-        margin-left: 30%;
         font-size: 20px;
         animation: slide-in 1s 3s forwards;
         visibility: hidden;
@@ -63,6 +63,7 @@
         
         &__pronounce{
             margin-left: 40%;
+            margin-bottom: 0px;
             font-size: 18px;
         }
 
@@ -84,6 +85,7 @@
 
 @media screen and (max-width: 550px) {
     .homeContent {
+    
         &__name{
             font-size: 40px;
         }

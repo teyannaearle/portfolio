@@ -8,8 +8,8 @@
   font-size: 20px;
   position: fixed;
   align-items: center;
-  -webkit-box-shadow: -1px 2px 18px -4px ivory;
-  box-shadow: -1px 2px 18px -4px ivory;
+  -webkit-box-shadow: -1px 2px 18px -4px $light-pink;
+  box-shadow: -1px 2px 18px -4px $light-pink;
   z-index: 1;
 
   &__logo {
@@ -35,8 +35,8 @@
       text-align: center;
       padding-top: 10px;
       padding-bottom: 10px;
-      border-top: 1px solid ivory;
-      border-bottom: 1px solid ivory;
+      border-top: 1px solid $light-pink;
+      border-bottom: 1px solid $light-pink;
 
       li {
         width: 100%;
