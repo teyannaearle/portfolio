@@ -1,16 +1,16 @@
 import React from "react";
 import "./AboutContent.scss";
-import aboutPicture from "../../assets/TeyBlue-3.png"
+import aboutPicture from "../../assets/TeyBlue-3.png";
 import { RiMickeyFill } from "react-icons/ri";
-import { HiExternalLink } from "react-icons/hi"
+import { HiExternalLink } from "react-icons/hi";
 import Resume from "../Resume";
 
 function AboutContent() {
   return (
-    <div  className="aboutContent">
-    {/* <Resume /> */}
-    {/* <div className="aboutContent__resume">< a href = "https://docs.google.com/document/d/e/2PACX-1vTfIJ6wYZfBlTa4qz0y20zKXx0Hpma9aPw00OM7NWHBrWKdyBTXcbRZnwoQBe9iTX2_gEP2MuXzPnnH/pub"  target="_blank" rel="noreferrer"> View Resume <HiExternalLink /> </a></div> */}
-    <img src={aboutPicture} alt="teyanna" className="aboutContent__pic"/>
+    <div className="aboutContent">
+      {/* <Resume /> */}
+      {/* <div className="aboutContent__resume">< a href = "https://docs.google.com/document/d/e/2PACX-1vTfIJ6wYZfBlTa4qz0y20zKXx0Hpma9aPw00OM7NWHBrWKdyBTXcbRZnwoQBe9iTX2_gEP2MuXzPnnH/pub"  target="_blank" rel="noreferrer"> View Resume <HiExternalLink /> </a></div> */}
+      <img src={aboutPicture} alt="teyanna" className="aboutContent__pic" />
       <ul>
         <li className="aboutContent__question">Where am I from ?</li>
         <p className="aboutContent__answer">
@@ -19,8 +19,11 @@ function AboutContent() {
 
         <li className="aboutContent__question">Where did I study ?</li>
         <p className="aboutContent__answer">
-          <a href="https://www.pursuit.org/" target="_blank" rel="noreferrer">Pursuit</a> : An intensive 12-month, Google funded,
-          software engineering fellowship with a 9% acceptance rate.
+          <a href="https://www.pursuit.org/" target="_blank" rel="noreferrer">
+            Pursuit
+          </a>{" "}
+          : An intensive 12-month, Google funded, software engineering
+          fellowship with a 9% acceptance rate.
         </p>
 
         <li className="aboutContent__question">What is my mission ?</li>
@@ -36,10 +39,18 @@ function AboutContent() {
 
         <li className="aboutContent__question">What are my hobbies ?</li>
         <p className="aboutContent__answer">
+          <span>
+            <img src="https://media.giphy.com/media/12sc1PggM7s9q0/giphy.gif" alt="gif"/>
+            <img src="https://media.giphy.com/media/wVW2wqlhDMuOWUEskW/giphy.gif" alt="gif"/>
+            <img src="https://media.giphy.com/media/8mBRrPdsiPlIlRr7Bk/giphy.gif" alt="gif"/>
+            <img src="https://media.giphy.com/media/WOZ1h2GTBXOe4nDGPz/giphy.gif" alt="gif"/>
+            <img src="https://media.giphy.com/media/gr3vDcFs1t1QJNtbW5/giphy.gif" alt="gif"/>
+          </span>
           In my free time, I love watching all genres of movies and shows ( with
-          an affinity to anything Disney <RiMickeyFill /> ), meditating,
-          traveling, listening and dancing to music, and experimenting with new
-          ways to care for and style my natural curls !
+          an affinity to anything Disney
+          <RiMickeyFill /> ), meditating, traveling, listening and dancing to
+          music, and experimenting with new ways to care for and style my
+          natural curls !
         </p>
       </ul>
     </div>

@@ -34,6 +34,26 @@
         a {
             font-family: $courgette;
         }
+
+        span {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding-bottom: 10px;
+            align-items: center;
+
+            &:after, &:before{
+                content: "";
+                width: 25%;
+                height: 1px;
+                background-color: $light-pink;
+                display: inline-block;
+            }
+        }
+
+        img {
+            height: 40px;
+        }
       
     }
 
