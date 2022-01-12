@@ -14,11 +14,12 @@ function AboutContent() {
       <ul>
         <li className="aboutContent__question">Where am I from ?</li>
         <p className="aboutContent__answer">
-          A Queens, NY native with a Carribean background.
+          &emsp; A Queens, NY native with a Carribean background.
         </p>
 
         <li className="aboutContent__question">Where did I study ?</li>
         <p className="aboutContent__answer">
+          &emsp;
           <a href="https://www.pursuit.org/" target="_blank" rel="noreferrer">
             Pursuit
           </a>{" "}
@@ -28,7 +29,7 @@ function AboutContent() {
 
         <li className="aboutContent__question">What is my mission ?</li>
         <p className="aboutContent__answer">
-          Combining my interests in tech and wellness, I strive to contribute
+          &emsp; Combining my interests in tech and wellness, I strive to contribute
           useful applications to the public. I believe that balance is the key
           to a healthier, more fulfilled life for all individuals. And if we can
           learn these things as early as possible, I'm confident that the future
@@ -46,8 +47,8 @@ function AboutContent() {
             <img src="https://media.giphy.com/media/WOZ1h2GTBXOe4nDGPz/giphy.gif" alt="gif"/>
             <img src="https://media.giphy.com/media/gr3vDcFs1t1QJNtbW5/giphy.gif" alt="gif"/>
           </span>
-          In my free time, I love watching all genres of movies and shows ( with
-          an affinity to anything Disney
+          &emsp; In my free time, I love watching all genres of movies and shows ( with
+          an affinity to anything Disney &nbsp;
           <RiMickeyFill /> ), meditating, traveling, listening and dancing to
           music, and experimenting with new ways to care for and style my
           natural curls !
