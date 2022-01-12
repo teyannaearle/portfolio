@@ -2,7 +2,7 @@
 
 .contactPage {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 42% 58%;
   align-items: center;
 
   &__greeting {
@@ -25,16 +25,8 @@
   }
 }
 
-@media  screen and (max-width: $large-break) {
-  .contactPage{
-  &__bottomHalf {
-    grid-template-columns: 35% 66%;
-  }
-}
-  
-}
 
-@media  screen and (max-width: $medium-break) {
+@media  screen and (max-width: $large-break) {
   .contactPage{
 &__greeting{
   width: 100%;

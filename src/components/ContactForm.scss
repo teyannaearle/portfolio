@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   color: ivory;
   font-family: serif;
   letter-spacing: 1px;
@@ -22,7 +21,7 @@
       margin-right: auto;
     }
   }
-  
+
   &__form {
     display: flex;
     flex-direction: column;
@@ -62,4 +61,46 @@
       }
     }
   }
+
+  &__message {
+    display: none;
+
+    &-sent,
+    &-error {
+      display: block;
+      background-color: $dark-blue;
+      color: white;
+      border-radius: 8px;
+      width: 70%;
+      padding: 8px;
+      position: relative;
+      margin-top: 20px;
+      text-align: center;
+
+      &:before {
+        content: "";
+        position: absolute;
+        margin-top: -6px;
+        margin-left: -50%;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid $dark-blue;
+        right: 15px;
+        right: 100%;
+        left: 100%;
+        top: -6px;
+      }
+    }
+  }
+}
+
+
+
+@media  screen and (max-width: 1200px) {
+.contactFormSection {
+  &__card{
+    width: 90%;
+  }
+}
+
 }
