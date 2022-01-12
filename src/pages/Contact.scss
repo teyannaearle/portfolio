@@ -1,8 +1,24 @@
-.contactPage{
-    display: grid;
-    grid-template-columns: 40% 60%;
+.contactPage {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
 
-    img{
-        height: 80%;
+  &__greeting {
+    grid-column: 1 / span 2;
+    text-align: center;
+    width: 90%;
+  }
+
+  &__bottomHalf {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    
+    img {
+      width: 100%;
     }
+  }
 }

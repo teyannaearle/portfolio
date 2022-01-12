@@ -1,8 +1,65 @@
 @import "../variables.scss";
 
-.contactForm{
+.contactFormSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: ivory;
+  font-family: serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+  &__card {
     background-color: $light-blue;
     border-radius: 8px;
-    width: 90%;
-    margin: auto;
+    width: 80%;
+
+    p {
+      text-align: center;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    align-items: center;
+
+    label {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    input,
+    textarea {
+      width: 70%;
+    }
+
+    textarea {
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 35%;
+      height: 30px;
+      background-color: $dark-blue;
+      color: $purple;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        color: ivory;
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+  }
 }
