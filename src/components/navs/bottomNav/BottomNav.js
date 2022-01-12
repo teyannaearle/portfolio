@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import info from "../../../data/info.json";
 import contact from "../../../data/contact.js";
+import { BsArrowUpShort , BsArrowDownShort } from "react-icons/bs"
 import "./BottomNav.scss";
 
 function BottomNav() {
@@ -48,8 +49,8 @@ function BottomNav() {
         </ul>
       </div>
       <ul className="bottomNav__collapsed">
-      <li className="bottomNav__collapsedInfo"> <span onClick={infoClickHandler}>{infoMenu ? <> &#x2193; </> : <> &#x2191; </>} My Info 	</span></li>
-      <li className="bottomNav__collapsedContact"> <span onClick={contactClickHandler}> {contactMenu ? <> &#x2193; </> : <> &#x2191; </>} Find me on .. </span></li>
+      <li className="bottomNav__collapsedInfo"> <span onClick={infoClickHandler}> My Info{infoMenu ? <>< BsArrowDownShort /></> : <> < BsArrowUpShort /> </>}	</span></li>
+      <li className="bottomNav__collapsedContact"> <span onClick={contactClickHandler}> Find me on ..{contactMenu ? <> < BsArrowDownShort /></> : <>< BsArrowUpShort /> </>} </span></li>
       </ul>
     </div>
   );
