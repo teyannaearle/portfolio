@@ -21,12 +21,14 @@ function ContactForm() {
           console.log(error.text);
         }
       );
+
+      e.target.reset()
   };
 
   return (
     <div className="contactFormSection">
         <div className="contactFormSection__card">
-        <p>Feel free to contact me (and/or tell me a little about yourself) if you'd like to work together !</p>
+        <p>Feel free to contact me (and/or tell me a little about yourself) if you'd like to work together!</p>
 
       
       <form ref={form} className="contactFormSection__form" onSubmit={sendEmail}>
