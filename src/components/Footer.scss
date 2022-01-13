@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.footer{
+    color: ivory;
+    font-family: serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: $dark-blue;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+}

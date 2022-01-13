@@ -15,10 +15,10 @@ function App() {
     <div className="App">
       <TopNav />
       <SideNav />
-      <Footer />
       <BottomNav />
 
     <div className="main"> 
+    {/* <div className="main__content">  */}
       <Link className="main__logoMin" to="/"><img src={Logo} alt="logo"/></Link>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +26,11 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      {/* </div> */}
+      {/* <Footer /> */}
       </div>
+
+
 
     </div>
   );
