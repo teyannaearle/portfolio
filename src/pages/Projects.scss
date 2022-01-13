@@ -1,23 +1,31 @@
 @import "../variables.scss";
 
-.projectPage{
-    &__container{
-        width: 90%;
-        margin-left: 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.projectPage {
+  &__container {
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    }
+  &__skills {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(1, 35, 86, 0.3);
+    color: ivory;
+    margin-bottom: 40px;
+  }
+}
 
-    &__skills{
-        font-size: 20px;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: rgb(1, 35, 86,0.3);
-        color: ivory;
-        margin-bottom: 40px;
+@media screen and (max-width: $medium-break) {
+  .projectPage {
+    &__container {
+      width: 100%;
+      margin-left: 0;
     }
+  }
 }

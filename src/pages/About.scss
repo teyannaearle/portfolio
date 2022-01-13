@@ -13,3 +13,9 @@
     grid-template-columns: 100%;
    }
 }
+
+@media screen and (max-width: $medium-break) {
+    .aboutPage{
+        margin-left: 0;
+    }
+}

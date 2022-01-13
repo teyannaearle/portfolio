@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .projectCard{
-    width: 70%;
+    width: 80%;
     margin-bottom: 100px;
     margin-right: 10%;
 
@@ -51,9 +51,17 @@
 
     &__tech{
         display: flex;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: space-between;
         width: 100%;
     }
 
 
+}
+
+@media screen and (max-width: 1000px){
+    .projectCard{
+        width: 90%;
+        margin-right: 0;
+    }
 }

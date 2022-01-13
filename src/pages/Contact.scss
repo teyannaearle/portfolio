@@ -45,3 +45,9 @@
 }
   
 }
+
+@media screen and (max-width: $medium-break) {
+  .contactPage{
+      margin-left: 0;
+  }
+}
