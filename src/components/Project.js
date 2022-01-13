@@ -1,12 +1,27 @@
 import React from "react";
+import { FiGithub } from "react-icons/fi"
+import { HiExternalLink } from "react-icons/hi"
 import "./Project.scss"
 
-function Project({project, key}) {
+function Project({project}) {
   return (
-    <li key={key}>
-      <img src={project.src} alt={project.alt} />
-      <span>{project.caption}</span>
-      <ul>
+    <li className="projectCard">
+        <div className="projectCard__title"> 
+
+        <p>{project.title}</p>
+        <span> 
+        <a href={project.githubLink}><FiGithub /></a>
+        <a href={project.siteLink}><HiExternalLink /></a>
+        </span>
+
+        </div>
+
+       <div className="projectCard__summary"> 
+       <img src={project.src} alt={project.alt} />
+      <span>&emsp; {project.caption}</span>   
+        </div> 
+
+      <ul className="projectCard__tech">
         {project.technologies.map((tech, index) => {
           return <li key={index}>{tech}</li>;
         })}

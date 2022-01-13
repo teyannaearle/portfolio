@@ -6,11 +6,11 @@ import "./Projects.scss";
 
 function Projects() {
   return (
-    <div>
+    <div className="projectPage">
       <Resume />
-      <ul>
-        {projectsData.map((project, key) => {
-          return <Project project={project} key={key} />;
+      <ul className="projectPage__container">
+        {projectsData.map((project, i) => {
+          return <Project project={project} key={i} />;
         })}
       </ul>
     </div>

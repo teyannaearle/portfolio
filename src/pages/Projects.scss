@@ -1,2 +1,7 @@
-@import "../variables.scss"
+@import "../variables.scss";
 
+.projectPage{
+    &__container{
+        width: 90%;
+    }
+}
