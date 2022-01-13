@@ -28,3 +28,11 @@
       display: none;
     }
   }
+
+  @media screen and (max-height: 625px) {
+      .sideNav{
+        font-size: 16px;
+      }
+
+
+  }

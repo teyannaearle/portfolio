@@ -3,13 +3,23 @@
 .footer{
     color: ivory;
     font-family: serif;
-    font-size: 18px;
-    text-align: center;
     background-color: $dark-blue;
     height: 40px;
     width: 100%;
     position: absolute;
     bottom: 0;
-    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // z-index: 1;
 
+}
+
+@media screen and (max-width: $medium-break) {
+    .footer{
+        display: none;
+        // height: 25px;
+        // position: fixed;
+        // padding-bottom: 80px;
+    }
 }
