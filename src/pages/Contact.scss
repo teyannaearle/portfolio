@@ -4,11 +4,13 @@
   display: grid;
   grid-template-columns: 42% 58%;
   align-items: center;
+  margin-left: 10%;
 
   &__greeting {
     grid-column: 1 / span 2;
     text-align: center;
     width: 90%;
+    margin-bottom: 40px;
   }
 
   &__bottomHalf {
