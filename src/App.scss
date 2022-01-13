@@ -53,19 +53,19 @@ html {
 }
 
 .main{
-  position: relative;
-  top: 80px;
-  right: 0px;
-  bottom: 0px;
-  left: 10%;
-  left:0;
-  // margin-top: 80px;
-  // padding-bottom: 40px;
-  // overflow:auto;
+  // position: relative;
+  // top: 80px;
+  // right: 0px;
+  // bottom: 0px;
+  // left: 10%;
+  // left:0;
+  margin-top: 80px;
+  padding-bottom: 40px;
+  overflow:auto;
 
-  // &__content{
-  //   margin-bottom: 10%;
-  // }
+  &__content{
+    margin-bottom: 5%;
+  }
 
   &__logoMin{
       display: none;

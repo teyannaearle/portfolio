@@ -18,7 +18,7 @@ function App() {
       <BottomNav />
 
     <div className="main"> 
-    {/* <div className="main__content">  */}
+    <div className="main__content"> 
       <Link className="main__logoMin" to="/"><img src={Logo} alt="logo"/></Link>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,8 +26,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* </div> */}
-      {/* <Footer /> */}
+      </div>
+      <Footer />
       </div>
 
 
