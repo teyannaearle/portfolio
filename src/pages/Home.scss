@@ -5,13 +5,15 @@
   display: grid;
   grid-template-columns: 50% 50%;
   margin-left: 10%;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 862px) {
   .homePage {
     grid-template-columns: 100%;
-    grid-template-rows: 35% 65%;
+    // grid-template-rows: 35% 65%;
     margin-top: 40px;
+
   }
 }
 
@@ -19,6 +21,7 @@
   .homePage {
     margin-top: 40px;
     left: 0;
+    margin-left: 0;
   }
 }
 

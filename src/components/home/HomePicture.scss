@@ -3,7 +3,7 @@
   align-items: center;
 
   img {
-    width: 100%;
+    width: 90%;
     animation: fade-in 5s 1s forwards;
     opacity: 0;
   }
@@ -24,8 +24,9 @@
     justify-content: center;
 
     img {
-      width: initial;
-      height: 100%;
+      // width: max-content
+      width: 60%;
+      // height: 100%;
     }
   }
 }
