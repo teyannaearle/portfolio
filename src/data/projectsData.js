@@ -10,8 +10,8 @@ const projectsData = [
     technologies: ["NodeJS", "Express", "PostgreSQL", "Firebase", "React", "CSS", "Toastify" , "Netlify", "Heroku" ],
     alt: "event planning app giphy",
     title: "Event(ful)",
-    githubLink: "",
-    siteLink: ""
+    githubLink: "https://github.com/cassidybeni/Event-ful",
+    siteLink: "https://eventful-capstone.netlify.app/"
   },
   {
     src: bodegaGif,
@@ -19,8 +19,8 @@ const projectsData = [
     technologies: ["Express", "PostgreSQL", "React", "CSS", "Netlify", "Heroku" ],
     alt: "online bodega app giphy",
     title: "Online Bodega",
-    githubLink: "",
-    siteLink: ""
+    githubLink: "https://github.com/angelinaebreo/Online-Bodega-PERN-Store",
+    siteLink: "https://online-bodega.netlify.app/"
   },
   {
     src: youtubeGif,
@@ -28,8 +28,8 @@ const projectsData = [
     technologies: ["YouTube Data API" , "Firebase", "React", "CSS"],
     alt: "youtube clone app giphy",
     title: "YouTube?",
-    githubLink: "",
-    siteLink: ""
+    githubLink: "https://github.com/teyannaearle/youtube_react_application",
+    siteLink: "https://youtube-earle-ebreo.netlify.app/"
   }
 ];
 export default projectsData;
