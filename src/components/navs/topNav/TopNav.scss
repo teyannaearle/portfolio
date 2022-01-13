@@ -10,7 +10,7 @@
   align-items: center;
   -webkit-box-shadow: -1px 2px 18px -4px $light-pink;
   box-shadow: -1px 2px 18px -4px $light-pink;
-  z-index: 1;
+  z-index: 999;
 
   &__logo {
     height: 80px;

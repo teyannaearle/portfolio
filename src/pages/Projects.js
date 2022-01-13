@@ -3,7 +3,6 @@ import Project from "../components/Project";
 import Resume from "../components/Resume";
 import projectsData from "../data/projectsData";
 import {
-  FaGit,
   FaGitAlt,
   FaNodeJs,
   FaReact,
