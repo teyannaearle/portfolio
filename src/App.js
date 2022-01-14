@@ -1,5 +1,6 @@
 import './App.scss';
 import { Routes, Route } from "react-router-dom"
+import { useLocation } from "react-router-dom";
 import TopNav from "./components/navs/topNav/TopNav"
 import SideNav from "./components/navs/sideNav/SideNav"
 import Footer from "./components/Footer"
@@ -10,12 +11,15 @@ import Projects from "./pages/Projects"
 import "../src/components/navs/topNav/TopNav.scss"
 
 function App() {
+  const location = useLocation().pathname
+
+  console.log(location)
   return (
     <div className="App">
       <TopNav /> 
       <SideNav />
 
-    <div className="main"> 
+    <div className={location === "/" ? "main main-home" :"main"}>
     <div className="main__content"> 
       <Routes>
         <Route path="/" element={<Home />} />
