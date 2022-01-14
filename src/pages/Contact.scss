@@ -1,10 +1,14 @@
 @import "../variables.scss";
 
 .contactPage {
-  display: grid;
-  grid-template-columns: 42% 58%;
-  align-items: center;
-  margin-left: 10%;
+  &__container {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    align-items: center;
+    margin-left: 10%;
+    animation: slide-in-contact 2s forwards;
+    visibility: hidden;
+  }
 
   &__greeting {
     grid-column: 1 / span 2;
@@ -20,35 +24,42 @@
     align-items: center;
     width: 90%;
     margin: auto;
-    
+
     img {
       width: 100%;
     }
   }
 }
 
-
-@media  screen and (max-width: $large-break) {
-  .contactPage{
-&__greeting{
-  width: 100%;
-  margin-bottom: 20px;
-}
-  &__bottomHalf {
-    grid-template-columns: 100%;
-
-    img{
-      width: 45%;
-      margin: auto;
-      margin-bottom: 30px;
-    }
-  }
-}
+@keyframes slide-in-contact {
+  from {margin-left: 150%; width: 100%; visibility: hidden;}
+  to { width: 90% ; visibility: visible; }
   
 }
 
+@media screen and (max-width: $large-break) {
+  .contactPage {
+    &__greeting {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__bottomHalf {
+      grid-template-columns: 100%;
+
+      img {
+        width: 45%;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $medium-break) {
-  .contactPage{
+  .contactPage {
+    &__container {
       margin-left: 0;
+      margin: auto;
+    }
   }
 }

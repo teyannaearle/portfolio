@@ -1,117 +1,116 @@
-@import "../../variables.scss" ;
+@import "../../variables.scss";
 
 .aboutContent {
-    width: 100% ; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slide-in 2s forwards;
+  visibility: hidden;
+
+  ul {
+    list-style-type: square;
+  }
+
+  &__question {
+    width: 50%;
+    font-size: 20px;
+    height: 30px;
+    margin: 0;
+    margin-left: 5%;
+  }
+
+  &__answer {
+    width: 70%;
+    margin-left: 15%;
+    background-color: $light-blue;
+    border-radius: 8px;
+    padding: 10px;
+    color: ivory;
+    font-family: serif;
+    font-size: 18px;
+
+    a {
+      font-family: $courgette;
+    }
+
+    span {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      padding-bottom: 10px;
+      align-items: center;
+
+      &:after,
+      &:before {
+        content: "";
+        width: 25%;
+        height: 1px;
+        background-color: $light-pink;
+        display: inline-block;
+      }
+    }
+
+    img {
+      height: 40px;
+    }
+  }
+
+  &__resume {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-   ul{ list-style-type: square;
-   }
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
 
-    &__question{
-        width: 50%;
-        font-size: 20px;
-        height: 30px;
-        margin: 0;
-        margin-left: 5%;
+    &:after {
+      content: "";
+      width: 50%;
+      height: 1px;
+      background-color: $light-pink;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
     }
+  }
 
-    &__answer{
-        width: 70%;
-        margin-left: 15%;
-        background-color: $light-blue;
-        border-radius: 8px;
-        padding: 10px;
-        color: ivory;
-        font-family: serif;
-        // letter-spacing: 1px;
-        font-size: 18px;
-
-        a {
-            font-family: $courgette;
-        }
-
-        span {
-            display: flex;
-            width: 100%;
-            justify-content: space-around;
-            padding-bottom: 10px;
-            align-items: center;
-
-            &:after, &:before{
-                content: "";
-                width: 25%;
-                height: 1px;
-                background-color: $light-pink;
-                display: inline-block;
-            }
-        }
-
-        img {
-            height: 40px;
-        }
-      
-    }
-
-    &__resume{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        font-size: 20px;
-
-        &:after{
-            content: "";
-            width: 50%;
-            height: 1px;
-            background-color: $light-pink;
-            display: inline-block;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    }
-
-    &__pic{
-        display: none;
-    }
+  &__pic {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .aboutContent{
-
-        &__resume{
-            &:after{
-                width: 30%;
-            }
-        }
-
-        &__pic{
-            display: block;
-            width: 30%;
-            margin: auto;
-            margin-top: 20px;
-            
-        }
-
-        &__question{
-            margin: auto;
-            width: 80%;
-        }
-
-        &__answer{
-            margin: auto;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            width: 80%;
-        }
+  .aboutContent {
+    &__resume {
+      &:after {
+        width: 30%;
+      }
     }
+
+    &__pic {
+      display: block;
+      width: 30%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    &__question {
+      margin: auto;
+      width: 80%;
+    }
+
+    &__answer {
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 80%;
+    }
+  }
 }
 
-@media screen and (max-width: $medium-break){
-    .aboutContent{
-
-        &__resume{
-            margin-left: 80px;
-        }}
-
+@media screen and (max-width: $medium-break) {
+  .aboutContent {
+    &__resume {
+      margin-left: 80px;
+    }
+  }
 }

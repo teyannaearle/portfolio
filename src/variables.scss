@@ -1,15 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap");
 
-$courgette: 'Courgette', cursive;
-$herr: 'Herr Von Muellerhoff', cursive;
+$courgette: "Courgette", cursive;
+$herr: "Herr Von Muellerhoff", cursive;
 $dark-blue: #010920;
-$light-blue: rgb(1, 35, 86,0.3);
-$light-blue: rgb(1, 35, 86,0.6);
-$purple:  #e3aceb;
+$light-blue: rgb(1, 35, 86, 0.3);
+$light-blue: rgb(1, 35, 86, 0.6);
+$purple: #e3aceb;
 $light-pink: #e9d3d7;
 $box-shadow: #00040e;
 
 $large-break: 800px;
-$mid-largeBreak: 700px ;
-$medium-break: 600px
+$mid-largeBreak: 700px;
+$medium-break: 600px;
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+
+@keyframes slide-in {
+  from {margin-left: 150%; width: 100%; visibility: hidden;}
+  to { visibility: visible; }
+  
+}

@@ -1,21 +1,26 @@
 @import "../variables.scss";
 
 .aboutPage {
+  &__container {
     display: grid;
-    // grid-template-rows: 10% 90%;
     grid-template-columns: 30% 70%;
     height: 100%;
     margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-   .aboutPage{
-    grid-template-columns: 100%;
-   }
+  .aboutPage {
+    &__container {
+      grid-template-columns: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: $medium-break) {
-    .aboutPage{
-        margin-left: 0;
+  .aboutPage {
+    &__container {
+      margin-left: 0;
     }
+  }
 }

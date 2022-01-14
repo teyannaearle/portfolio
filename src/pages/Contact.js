@@ -8,6 +8,7 @@ function Contact() {
   return (
     <div className="contactPage">
       <Resume />
+      <span className="contactPage__container"> 
       <div className="contactPage__greeting">
         {" "}
         <h1>I'm so happy that you're here.</h1>
@@ -20,6 +21,7 @@ function Contact() {
         />
         <ContactForm />
       </div>
+      </span>
     </div>
   );
 }

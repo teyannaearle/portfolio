@@ -14,6 +14,7 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import "./Projects.scss";
 
 function Projects() {
+
   return (
     <div className="projectPage">
       <Resume />

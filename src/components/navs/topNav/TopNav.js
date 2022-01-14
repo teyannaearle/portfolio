@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {Scroll} from "../../../hooks/Scroll"
+import { WatchScroll } from "../../../hooks/WatchScroll"
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/Logo.png";
 import info from "../../../data/info.json";
@@ -8,7 +8,7 @@ import "./TopNav.scss";
 
 function TopNav() {
   const [active, setActive] = useState(false);
-  const { scrollDirection } = Scroll();  
+  const { scrollDirection } = WatchScroll();  
 
   useEffect(()=>{
     if (scrollDirection ==="down"){

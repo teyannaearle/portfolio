@@ -9,8 +9,10 @@ function About() {
     return (
         <div className='aboutPage'>
             <Resume />
+            <span className='aboutPage__container' > 
             <AboutPicture />
             <AboutContent />
+            </span>
         </div>
     )
 }

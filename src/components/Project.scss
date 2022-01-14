@@ -2,7 +2,6 @@
 
 .projectCard{
     width: 80%;
-    // margin-bottom: 100px;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-right: 10%;
@@ -42,7 +41,6 @@
           border-bottom-right-radius: 8px;
             color: ivory;
             font-family: serif;
-            // letter-spacing: 1px;
             font-size: 18px;    
             display: block;
             position: absolute;
@@ -65,7 +63,6 @@
 
 @media screen and (max-width: 1000px){
     .projectCard{
-        // width: 90%;
         width: 85%;
         margin-right: 0;
     }
@@ -96,17 +93,20 @@
         }
       }
       &__tech {
+        font-size: 14px;
         li {
           padding-right: 20px;
         }
       }
   
       &__summary {
+        
         img {
           border-bottom-right-radius: 0;
           border-bottom-left-radius: 0;
         }
         span {
           position: relative;
+          font-size: 16px;
         }
       }}}

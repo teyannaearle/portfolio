@@ -49,29 +49,24 @@
 
     &__slideIn {
         &-first{
-            animation: slide-in 1s forwards;
+            animation: slide-in-home 2s forwards;
             visibility: hidden;
         }
 
         &-second{
-            animation: slide-in 1s 1s forwards;
-            visibility: hidden;
-        }
-
-        &-second{
-            animation: slide-in 1s 1s forwards;
+            animation: slide-in-home 2s 1s forwards;
             visibility: hidden;
         }
 
         &-third{
-            animation: slide-in 1s 2s forwards;
+            animation: slide-in-home 1s 2s forwards;
             visibility: hidden;
         }
     }
 }
 
 
-@keyframes slide-in {
+@keyframes slide-in-home {
     from {margin-left: 150%; width: 100%; visibility: hidden;}
     to { width: 95% ; visibility: visible; }
     
