@@ -73,9 +73,9 @@ html {
     height: 100%;
   }
 
-  &__logoMin{
-      display: none;
-  }
+  // &__logoMin{
+  //     display: none;
+  // }
 }
 
 
@@ -85,19 +85,19 @@ html {
     left: 0;
     bottom: 80px;
 
-    &__logoMin{
-        display: block;
-        height: 80px;
-        position: absolute;
+    // &__logoMin{
+    //     display: block;
+    //     height: 80px;
+    //     position: absolute;
 
-        top: 0;
-        left: 0;
+    //     top: 0;
+    //     left: 0;
 
-        img{
-          height: 100%;
-          width: 100%;
-        }
-    }
+    //     img{
+    //       height: 100%;
+    //       width: 100%;
+    //     }
+    // }
    
   }
   

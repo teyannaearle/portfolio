@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import {Scroll} from "../../../hooks/Scroll"
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/Logo.png";
 import info from "../../../data/info.json";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
-import { MdClose } from "react-icons/md"
 import "./TopNav.scss";
 
 function TopNav() {
   const [active, setActive] = useState(false);
+  const { scrollDirection } = Scroll();  
+
+  useEffect(()=>{
+    if (scrollDirection ==="down"){
+      setActive(false)
+    }
+  },[scrollDirection])
+
 
   return (
-    <div className="topNav">
+    <div className={scrollDirection ==="up" ?  "topNav-hidden" : "topNav"}>
       <Link to="/" className="topNav__logo">
         {" "}
         <img src={Logo} alt="logo" />{" "}
