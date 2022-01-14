@@ -64,12 +64,12 @@ html {
   // left: 10%;
   // left:0;
   margin-top: 80px;
-  padding-bottom: 40px;
+  // padding-bottom: 40px;
   overflow:auto;
 
   &__content{
     // margin-bottom: 10%;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     height: 100%;
   }
 
@@ -84,6 +84,10 @@ html {
     top: 0px;
     left: 0;
     bottom: 80px;
+
+    &__content{
+      margin-bottom: 120px;
+    }
 
     &-home{
       margin-top: 20px;

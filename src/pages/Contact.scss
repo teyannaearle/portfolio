@@ -32,14 +32,15 @@
   .contactPage{
 &__greeting{
   width: 100%;
+  margin-bottom: 20px;
 }
   &__bottomHalf {
     grid-template-columns: 100%;
 
     img{
-      width: 40%;
+      width: 45%;
       margin: auto;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
   }
 }

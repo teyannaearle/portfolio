@@ -18,7 +18,7 @@ function TopNav() {
 
 
   return (
-    <div className={scrollDirection ==="up" ?  "topNav-hidden" : "topNav"}>
+    <div className={scrollDirection ==="up" ?  "topNav topNav-hidden" : "topNav"}>
       <Link to="/" className="topNav__logo" onClick={() => setActive(false)}>
         {" "}
         <img src={Logo} alt="logo" />{" "}

@@ -84,6 +84,8 @@
 
   @media screen and (max-width: $medium-break) {
     .projectCard {
+
+      margin-top: 60px;
       &__title {
         p {
           font-size: 30px;
