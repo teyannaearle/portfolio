@@ -10,8 +10,13 @@
   align-items: center;
   -webkit-box-shadow: -1px 2px 18px -4px $light-pink;
   box-shadow: -1px 2px 18px -4px $light-pink;
+
   z-index: 999;
-  
+
+  &__collapsedMenuIcon {
+    display: none;
+  }
+
   &__logo {
     height: 80px;
     display: inline-block;
@@ -19,7 +24,7 @@
       height: 100%;
     }
 
-    &:hover{
+    &:hover {
       transform: scale(1);
     }
   }
@@ -57,10 +62,63 @@
   }
 }
 
-
 @media screen and (max-width: $medium-break) {
   .topNav {
-    display: none;
-  }
+    width: max-content;
+    -webkit-box-shadow: -1px 10px 15px -4px rgba(233, 211, 215, 0.2);
+    box-shadow: -1px 10px 15px -4px rgba(233, 211, 215, 0.2);
 
+    ul {
+      margin: 0;
+      border-bottom: 1px solid rgba(233, 211, 215, 0.2);
+      -webkit-box-shadow: -1px 10px 15px -4px rgba(233, 211, 215, 0.2);
+      box-shadow: -1px 10px 15px -4px rgba(233, 211, 215, 0.2);
+    }
+    &__listItems {
+      border-top: 1px solid rgba(233, 211, 215, 0.2);
+      padding: 20px;
+    }
+
+    &__menuItems {
+      display: none;
+
+      &-active {
+        display: block;
+        position: absolute;
+        top: 0;
+        padding-top: 80px;
+        z-index: -1;
+        width: 100vw;
+        background-color: $dark-blue;
+      }
+    }
+
+    &__collapsedMenuIcon {
+      display: flex;
+      background-color: $dark-blue;
+      color: $purple;
+      font-size: 30px;
+      width: 40px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__openMenuIcon {
+      color: $purple;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }

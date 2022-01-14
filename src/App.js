@@ -9,11 +9,12 @@ import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import BottomNav from './components/navs/bottomNav/BottomNav';
+import "../src/components/navs/topNav/TopNav.scss"
 
 function App() {
   return (
     <div className="App">
-      <TopNav />
+      <TopNav /> 
       {/* <SideNav /> */}
       {/* <BottomNav /> */}
 
@@ -27,7 +28,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <SideNav />
-      {/* <BottomNav /> */}
       </div>
       <Footer />
       </div>
