@@ -11,11 +11,11 @@ export function WatchScroll() {
 
   const handleScroll = () => {
     const bottom = Math.ceil(window.innerHeight + window.scrollY)  >= document.documentElement.scrollHeight
-
     setPosition(document.body.getBoundingClientRect());
     setScrollDirection(lastScrollTop > -position.top ? "down" : "up");
     setLastScrollTop(-position.top);
     setScrolledToBottom(bottom)
+
   };
 
   useEffect(() => {

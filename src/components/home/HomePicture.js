@@ -1,5 +1,5 @@
 import React from 'react'
-import homePic from "../../assets/TeyTru-2.png"
+import homePic from "../../assets/TeyTru-20.png"
 import "./HomePicture.scss"
 
 function HomePicture() {

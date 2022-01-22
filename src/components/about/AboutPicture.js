@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutPic from "../../assets/TeyBlue-3.png"
+import aboutPic from "../../assets/TeyBlue-30.png"
 import "./AboutPicture.scss"
 
 function AboutPicture() {

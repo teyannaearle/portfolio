@@ -4,10 +4,10 @@ import "./sideNav.scss"
 import { WatchScroll } from "../../../hooks/WatchScroll"
 
 function SideNav() {
-  const { scrolledToBottom } = WatchScroll ()
+  const { scrolledToBottom } = WatchScroll()
 
     return (
-        <ul className={scrolledToBottom ? "sideNav sideNav-bottom" : "sideNav"}>
+        <ul className={scrolledToBottom ? "sideNav sideNav-bottom" : "sideNav"}>  
         {contact.map((item, key) => {
           return (
             <li key={key}>
