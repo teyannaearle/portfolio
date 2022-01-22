@@ -1,5 +1,5 @@
 import React from "react";
-import contact from "../data/contact";
+import contact from "../../data/contact";
 import "./Footer.scss";
 
 function Footer() {

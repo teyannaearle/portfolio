@@ -1,11 +1,10 @@
-@import "../variables.scss";
+@import "../../styleUtils/variables.scss";
 
 .contactFormSection {
+  @include white-font;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ivory;
-  font-family: serif;
   font-size: 18px;
 
   &__card {

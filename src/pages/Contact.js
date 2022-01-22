@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.scss";
-import Resume from "../components/Resume";
-import ContactForm from "../components/ContactForm";
+import Resume from "../components/resume/Resume";
+import ContactForm from "../components/contactForm/ContactForm";
 import caterpillar from "../assets/caterpillar.png";
 
 function Contact() {

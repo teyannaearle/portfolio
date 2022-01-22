@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import  "../styleUtils/variables.scss" ;
 
 .projectPage {
   &__container {
@@ -12,13 +12,14 @@
   }
 
   &__skills {
+    @include white-font;
     font-size: 20px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(1, 35, 86, 0.3);
-    color: ivory;
+    // color: ivory;
     animation: slide-in 2s forwards;
   }
 }

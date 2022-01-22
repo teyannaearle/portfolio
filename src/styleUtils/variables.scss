@@ -3,11 +3,18 @@
 
 $courgette: "Courgette", cursive;
 $herr: "Herr Von Muellerhoff", cursive;
+@mixin white-font{
+  font-family: serif;
+  color: ivory;
+}  
+
+
 $dark-blue: #010920;
-$light-blue: rgb(1, 35, 86, 0.3);
+// $light-blue: rgb(1, 35, 86, 0.3);
 $light-blue: rgb(1, 35, 86, 0.6);
 $purple: #e3aceb;
 $light-pink: #e9d3d7;
+
 $box-shadow: #00040e;
 
 $large-break: 800px;

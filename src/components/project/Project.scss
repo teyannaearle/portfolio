@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import "../../styleUtils/variables.scss";
 
 .projectCard{
     width: 80%;
@@ -37,10 +37,9 @@
         }
     
         span{
+          @include white-font;
           border-bottom-left-radius: 8px;
           border-bottom-right-radius: 8px;
-            color: ivory;
-            font-family: serif;
             font-size: 18px;    
             display: block;
             position: absolute;

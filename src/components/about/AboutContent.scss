@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import "../../styleUtils/variables.scss";
 
 .aboutContent {
   width: 100%;
@@ -21,13 +21,12 @@
   }
 
   &__answer {
+    @include white-font;
     width: 70%;
     margin-left: 15%;
     background-color: $light-blue;
     border-radius: 8px;
     padding: 10px;
-    color: ivory;
-    font-family: serif;
     font-size: 18px;
 
     a {

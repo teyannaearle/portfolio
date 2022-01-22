@@ -1,8 +1,7 @@
-@import "../variables.scss";
+@import "../../styleUtils/variables.scss";
 
 .footer{
-    color: ivory;
-    font-family: serif;
+    @include white-font;
     background-color: $dark-blue;
     height: 40px;
     width: 100%;
