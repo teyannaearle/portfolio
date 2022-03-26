@@ -10,8 +10,8 @@ const projectsData = [
     technologies: ["NodeJS", "Express", "PostgreSQL", "Firebase", "React", "CSS", "Toastify" , "Netlify", "Heroku" ],
     alt: "event planning app giphy",
     title: "Event(ful)",
-    githubLink: "https://github.com/cassidybeni/Event-ful",
-    siteLink: "https://eventful-capstone.netlify.app/"
+    githubLink: "https://github.com/teyannaearle/Event-ful",
+    siteLink: "https://eventful-application.netlify.app/"
   },
   {
     src: bodegaGif,
