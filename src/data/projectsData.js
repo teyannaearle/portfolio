@@ -12,24 +12,24 @@ const projectsData = [
     title: "Event(ful)",
     githubLink: "https://github.com/teyannaearle/Event-ful",
     siteLink: "https://eventful-application.netlify.app/"
-  },
-  {
-    src: bodegaGif,
-    caption: "A full stack application. Users are able to perform full CRUD actions to add, edit, update and delete items from the online store.",
-    technologies: ["Express", "PostgreSQL", "React", "CSS", "Netlify", "Heroku" ],
-    alt: "online bodega app giphy",
-    title: "Online Bodega",
-    githubLink: "https://github.com/angelinaebreo/Online-Bodega-PERN-Store",
-    siteLink: "https://online-bodega.netlify.app/"
-  },
-  {
-    src: youtubeGif,
-    caption: "A YouTube clone. Users can search for and watch any videos that exist on YouTube. They can also leave comments, like and dislike comments, as well as choose their very own avatar (avatar options change on refresh)! ",
-    technologies: ["YouTube Data API" , "Firebase", "React", "CSS"],
-    alt: "youtube clone app giphy",
-    title: "YouTube?",
-    githubLink: "https://github.com/teyannaearle/youtube_react_application",
-    siteLink: "https://youtube-earle-ebreo.netlify.app/"
   }
+  // {
+  //   src: bodegaGif,
+  //   caption: "A full stack application. Users are able to perform full CRUD actions to add, edit, update and delete items from the online store.",
+  //   technologies: ["Express", "PostgreSQL", "React", "CSS", "Netlify", "Heroku" ],
+  //   alt: "online bodega app giphy",
+  //   title: "Online Bodega",
+  //   githubLink: "https://github.com/angelinaebreo/Online-Bodega-PERN-Store",
+  //   siteLink: "https://online-bodega.netlify.app/"
+  // },
+  // {
+  //   src: youtubeGif,
+  //   caption: "A YouTube clone. Users can search for and watch any videos that exist on YouTube. They can also leave comments, like and dislike comments, as well as choose their very own avatar (avatar options change on refresh)! ",
+  //   technologies: ["YouTube Data API" , "Firebase", "React", "CSS"],
+  //   alt: "youtube clone app giphy",
+  //   title: "YouTube?",
+  //   githubLink: "https://github.com/teyannaearle/youtube_react_application",
+  //   siteLink: "https://youtube-earle-ebreo.netlify.app/"
+  // }
 ];
 export default projectsData;
