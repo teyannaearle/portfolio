@@ -1,11 +1,12 @@
 // import youtubeGif from "../assets/youtube.gif";
 // import bodegaGif from "../assets/bodega.gif";
 import eventfulGif from "../assets/eventful.gif";
-import calcGif from "../assets/calcGiphy.gif"
+import calcGif from "../assets/calcGiphy1.gif"
 
 const projectsData = [
   {
     src: eventfulGif,
+
     caption:
       "A full stack application. The Event(ful) app is a one-stop shop for your vendor-booking organization. Save time and reduce the stress of planning an event by using this site to search for and favorite vendors that you need, while keeping track of the vendors you’ve booked and your budget, all in one place! ",
     technologies: ["NodeJS", "Express", "PostgreSQL", "Firebase", "React", "CSS", "Toastify" , "Netlify", "Heroku" ],
