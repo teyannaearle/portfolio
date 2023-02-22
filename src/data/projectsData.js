@@ -1,7 +1,7 @@
-import youtubeGif from "../assets/youtube.gif";
-import bodegaGif from "../assets/bodega.gif";
+// import youtubeGif from "../assets/youtube.gif";
+// import bodegaGif from "../assets/bodega.gif";
 import eventfulGif from "../assets/eventful.gif";
-import calcGif from "../assets/calcGiphy.mp4"
+import calcGif from "../assets/calcGiphy.gif"
 
 const projectsData = [
   {
