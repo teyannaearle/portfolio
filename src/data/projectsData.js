@@ -17,7 +17,7 @@ const projectsData = [
   }, 
   {
     src: calcGif,
-    caption:"A basic React calculator. Add, subtract, multiply and divide to your heart's content",
+    caption:"A basic React calculator. Add, subtract, multiply and divide to your heart's content.",
     technologies: ["React", "CSS", "Netlify"],
     title:"React Calculator",
     githubLink:"https://github.com/teyannaearle/react_calculator",
