@@ -6,7 +6,7 @@ function Resume() {
   return (
     <div className="resumeLink">
       <a
-        href="https://docs.google.com/document/d/e/2PACX-1vTfIJ6wYZfBlTa4qz0y20zKXx0Hpma9aPw00OM7NWHBrWKdyBTXcbRZnwoQBe9iTX2_gEP2MuXzPnnH/pub"
+        href="https://docs.google.com/document/d/e/2PACX-1vQTJKVDC-woX_QoqQDkqlig7sk47tzPG9-8_GjiUtfmTLzsRxEGop1CEfF-EIN-eLNAXMFJhIag3E6u/pub"
         target="_blank"
         rel="noreferrer"
       >
