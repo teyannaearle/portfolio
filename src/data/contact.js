@@ -7,11 +7,11 @@ const contact = [
         text: "Linked In",
         icon: <FaLinkedinIn />
     },
-    {
-        url: "https://twitter.com/TeyannaEarle",
-        text: "Twitter",
-        icon: <FaTwitter />
-    },
+    // {
+    //     url: "https://twitter.com/TeyannaEarle",
+    //     text: "Twitter",
+    //     icon: <FaTwitter />
+    // },
     {
         url: "https://github.com/teyannaearle",
         text: "Github",
