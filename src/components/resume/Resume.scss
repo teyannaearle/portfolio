@@ -22,12 +22,18 @@
     // }
 }
 
+@media screen and (max-width: 1000px){
+    .resumeLink{
+        margin-top:10px;
+    }
+}
+
 @media screen and (max-width: $medium-break){
     .resumeLink{
             margin-left: 80px;
             margin-top: 0;
         }
-}
+} 
 
 @media screen and (max-width: 400px){
     .resumeLink{
