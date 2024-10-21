@@ -1,12 +1,14 @@
 import React from "react";
 import "./AboutContent.scss";
 import aboutPicture from "../../assets/TeyBlue-3.png";
-import { RiMickeyFill } from "react-icons/ri";
 
 function AboutContent() {
   return (
     <div className="aboutContent">
       <img src={aboutPicture} alt="teyanna" className="aboutContent__pic" />
+      <div>
+        <h2> Full Stack Web Dev | Wellness Fanatic &nbsp;</h2>
+      </div>
       <ul>
         <li className="aboutContent__question">Where am I from ?</li>
         <p className="aboutContent__answer">

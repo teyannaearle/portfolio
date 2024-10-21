@@ -1,71 +1,73 @@
 @import "../../styleUtils/variables.scss";
 
-.projectCard{
-    width: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-right: 10%;
-
-    &__title{
-        width: 95%;
-        display: flex;
-        justify-content: space-between;
-        
-        p{
-            font-size: 40px;
-            margin: 0;
-            margin-bottom: 10px;
-        }
-
-        a{
-            font-size: 30px;
-            margin-left: 10px;
-            margin-top: 15px;
-        }
-    }
-
-    &__summary{
-      position: relative;
-      margin-bottom: 20px;
-      -webkit-box-shadow: 0px 3px 20px 8px rgba(233, 211, 215, 0.2);
-      box-shadow: 0px 3px 20px 8px rgba(233, 211, 215, 0.2);
-      border-radius: 8px;
-
-        img{
-            width: 100%;
-            border-radius: 8px;
-        }
-    
-        span{
-          @include white-font;
-          border-bottom-left-radius: 8px;
-          border-bottom-right-radius: 8px;
-            font-size: 18px;    
-            display: block;
-            position: absolute;
-            padding: 10px;
-            height: max-content;
-            bottom: 0px;
-            background-color: $dark-blue;
-            width: 100%;
-        }
-    }
-
-    &__tech{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-
+.projectsLink {
+  @include top-pg-links;
 }
 
-@media screen and (max-width: 1000px){
-    .projectCard{
-        width: 85%;
-        margin-right: 0;
+.projectCard {
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 10%;
+
+  &__title {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 40px;
+      margin: 0;
+      margin-bottom: 10px;
     }
+
+    a {
+      font-size: 30px;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+  }
+
+  &__summary {
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 3px 20px 8px rgba(233, 211, 215, 0.2);
+    box-shadow: 0px 3px 20px 8px rgba(233, 211, 215, 0.2);
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    span {
+      @include white-font;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      font-size: 18px;
+      display: block;
+      position: absolute;
+      padding: 10px;
+      height: max-content;
+      bottom: 0px;
+      background-color: $dark-blue;
+      width: 100%;
+    }
+  }
+
+  &__tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projectCard {
+    width: 85%;
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -77,36 +79,50 @@
         padding-bottom: 5px;
       }
     }
-  }}
+  }
+}
 
-  @media screen and (max-width: $medium-break) {
-    .projectCard {
+@media screen and (max-width: $medium-break) {
+  .projectsLink {
+    margin-left: 80px;
+    margin-top: 0;
+  }
 
-      margin-top: 60px;
-      &__title {
-        p {
-          font-size: 30px;
-        }
-        a {
-          font-size: 20px;
-          margin-top: 10px;
-        }
+  .projectCard {
+    margin-top: 60px;
+    &__title {
+      p {
+        font-size: 30px;
       }
-      &__tech {
-        font-size: 14px;
-        li {
-          padding-right: 20px;
-        }
+      a {
+        font-size: 20px;
+        margin-top: 10px;
       }
-  
-      &__summary {
-        
-        img {
-          border-bottom-right-radius: 0;
-          border-bottom-left-radius: 0;
-        }
-        span {
-          position: relative;
-          font-size: 16px;
-        }
-      }}}
+    }
+    &__tech {
+      font-size: 14px;
+      li {
+        padding-right: 20px;
+      }
+    }
+
+    &__summary {
+      img {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      span {
+        position: relative;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .projectsLink{
+      &:after{
+          width: 20%;
+      }
+  }
+}
