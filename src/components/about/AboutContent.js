@@ -6,9 +6,9 @@ function AboutContent() {
   return (
     <div className="aboutContent">
       <img src={aboutPicture} alt="teyanna" className="aboutContent__pic" />
-      <div>
+      {/* <div>
         <h2> Full Stack Web Dev | Wellness Fanatic &nbsp;</h2>
-      </div>
+      </div> */}
       <ul>
         <li className="aboutContent__question">Where am I from ?</li>
         <p className="aboutContent__answer">

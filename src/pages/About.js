@@ -4,13 +4,15 @@ import AboutPicture from '../components/about/AboutPicture'
 import Resume from '../components/resume/Resume'
 import "./About.scss"
 import ProjectsLink from '../components/project/ProjectsLink'
+import LinksSection from '../components/navs/topNav/LinksSection'
 
 
 function About() {
     return (
         <div className='aboutPage'>
-            <Resume />
-            <ProjectsLink />
+            {/* <Resume />
+            <ProjectsLink /> */}
+            <LinksSection />
             <span className='aboutPage__container' > 
             <AboutPicture />
             <AboutContent />

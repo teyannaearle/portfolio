@@ -1,0 +1,65 @@
+@import "../../../styleUtils/variables.scss";
+
+.linksSection{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    h2{
+        margin-left: 10%;
+        color: $light-pink;
+        font-family: serif;
+        overflow: hidden;
+        border-right: .15em solid ivory; 
+        white-space: nowrap;
+        // margin: 0 auto; 
+        letter-spacing: .10em; 
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+        display: inline-block;
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 38ch;}
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: ivory; }
+    to {border-color: transparent;}
+  }
+
+  @media screen and (max-width: 1000px) {
+    .linksSection{
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+
+        h2{
+            margin-left: 0%;
+        }
+        div{
+            text-align: center;
+        }
+    }
+  }
+
+  @media screen and (max-width: $medium-break) {
+    .linksSection{
+        margin-top: 80px;
+    }
+
+    div{
+      font-size: small;
+    }
+  }
+
+  @media screen and (max-width: $smallest-break) {
+    .aboutContent {
+      div{
+        font-size: x-small;
+      }
+    }
+  }
