@@ -11,22 +11,24 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import "../src/components/navs/topNav/TopNav.scss";
+import Banner from "./components/navs/Banner";
 
 function App() {
   const location = useLocation().pathname;
 
   return (
     <div className="App">
-      <TopNav />
+      {/* <TopNav /> */}
+      <Banner />
       <SideNav />
 
       <div className={location === "/" ? "main main-home" : "main"}>
         <div className="main__content">
         <ScrollToTop />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/" element={<About />} />
+            {/* <Route path="/about" element={<About />} /> */}
+            {/* <Route path="/projects" element={<Projects />} /> */}
             {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </div>
