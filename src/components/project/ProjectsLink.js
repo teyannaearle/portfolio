@@ -8,11 +8,8 @@ function ProjectsLink() {
     <div className="projectsLink">
       <Link to="/projects">
         {" "}
-        View Projects <FaLaptopCode />
+        Projects <FaLaptopCode />
       </Link>
-      {/* <a href="/projects">
-        View Projects <FaLaptopCode />
-      </a> */}
     </div>
   );
 }

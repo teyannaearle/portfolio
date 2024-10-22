@@ -4,7 +4,7 @@ import AboutPicture from '../components/about/AboutPicture'
 import Resume from '../components/resume/Resume'
 import "./About.scss"
 import ProjectsLink from '../components/project/ProjectsLink'
-import LinksSection from '../components/navs/topNav/LinksSection'
+import LinksSectionAbout from '../components/navs/topNav/LinksSectionAbout'
 
 
 function About() {
@@ -12,7 +12,7 @@ function About() {
         <div className='aboutPage'>
             {/* <Resume />
             <ProjectsLink /> */}
-            <LinksSection />
+            <LinksSectionAbout />
             <span className='aboutPage__container' > 
             <AboutPicture />
             <AboutContent />

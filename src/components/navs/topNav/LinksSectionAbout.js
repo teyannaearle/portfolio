@@ -1,7 +1,7 @@
 import React from "react";
 import Resume from "../../resume/Resume";
 import ProjectsLink from "../../project/ProjectsLink";
-import "./LinksSection.scss"
+import "./LinksSection.scss";
 
 function LinksSection() {
   return (
@@ -10,10 +10,9 @@ function LinksSection() {
         <h2> Full Stack Web Dev | Wellness Fanatic &nbsp;</h2>
       </div>
       <div>
-      <Resume />
-      <ProjectsLink />
+        <ProjectsLink />
+        <Resume />
       </div>
-
     </div>
   );
 }

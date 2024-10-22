@@ -10,7 +10,7 @@ function Resume() {
         target="_blank"
         rel="noreferrer"
       >
-        View Resume <HiExternalLink />
+        Resume <HiExternalLink />
       </a>
     </div>
   );

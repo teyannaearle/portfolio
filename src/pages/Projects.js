@@ -12,12 +12,14 @@ import {
 import { SiPostgresql, SiRedux, SiJavascript } from "react-icons/si";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import "./Projects.scss";
+import LinksSectionProjects from "../components/navs/topNav/LinksSectionProjects";
 
 function Projects() {
 
   return (
     <div className="projectPage">
-      <Resume />
+      <LinksSectionProjects />
+      {/* <Resume /> */}
       <ul className="projectPage__skills">
         <FaGitAlt />
         <FaNodeJs />
