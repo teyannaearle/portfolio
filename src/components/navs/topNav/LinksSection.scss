@@ -46,17 +46,27 @@
     }
   }
 
+  // @media screen and (max-width: $mid-largeBreak) {
+  //   .linksSection{
+  //       margin-top: 80px;
+  //   }
+  // }
+
   @media screen and (max-width: $medium-break) {
     .linksSection{
-        margin-top: 80px;
-    }
+      margin-top: 10px;
 
+      &__head{
+        margin-top: 80px;
+      }
+  }
     div{
       font-size: small;
     }
   }
 
   @media screen and (max-width: $smallest-break) {
+    
     .aboutContent {
       div{
         font-size: x-small;

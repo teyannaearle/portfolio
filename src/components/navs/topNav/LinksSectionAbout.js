@@ -6,7 +6,7 @@ import "./LinksSection.scss";
 function LinksSection() {
   return (
     <div className="linksSection">
-      <div>
+      <div className="linksSection__head">
         <h2> Full Stack Web Dev | Wellness Fanatic &nbsp;</h2>
       </div>
       <div>
