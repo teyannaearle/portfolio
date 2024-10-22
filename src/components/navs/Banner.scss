@@ -21,3 +21,9 @@
     text-shadow: 0 0 4px $purple, 0 0 2px $purple, 0 0 5px $purple;
   }
 }
+
+@media screen and (max-width: $smallest-break) {
+  h1{
+    font-size: xx-large;
+  }
+}

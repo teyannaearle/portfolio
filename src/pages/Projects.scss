@@ -30,6 +30,13 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .projectPage{
+    &__skills {
+      margin-top: 50px;
+    }
+  }
+}
 @media screen and (max-width: $large-break) {
   .projectPage{ 
     &__skills {
