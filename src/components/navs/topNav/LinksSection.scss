@@ -1,81 +1,82 @@
 @import "../../../styleUtils/variables.scss";
 
-.linksSection{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
+.linksSection {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
 
-    h2{
-        margin-left: 10%;
-        color: $light-pink;
-        font-family: serif;
-        overflow: hidden;
-        border-right: .15em solid ivory; 
-        white-space: nowrap;
-        // margin: 0 auto; 
-        letter-spacing: .10em; 
-        animation: 
-        typing 2.5s steps(38, end),
-        blink-caret .75s step-end infinite;
-        display: inline-block;
-    }
+  h2 {
+    margin-left: 10%;
+    color: $light-pink;
+    font-family: serif;
+    overflow: hidden;
+    border-right: 0.15em solid ivory;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+    animation: typing 2.5s steps(38, end), blink-caret 0.75s step-end infinite;
+    display: inline-block;
+  }
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 38ch;}
+  from {
+    width: 0;
   }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: ivory; }
-    to {border-color: transparent;}
+  to {
+    width: 38ch;
   }
+}
 
-  @media screen and (max-width: 1000px) {
-    .linksSection{
-        grid-template-columns: none;
-        grid-template-rows: 50% 50%;
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: ivory;
+  }
+  to {
+    border-color: transparent;
+  }
+}
 
-        h2{
-            margin-left: 0%;
-        }
-        div{
-            text-align: center;
-        }
+@media screen and (max-width: 1000px) {
+  .linksSection {
+    grid-template-columns: none;
+    grid-template-rows: 50% 50%;
+
+    h2 {
+      margin-left: 0%;
+    }
+    div {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $medium-break) {
+  .linksSection {
+    margin-top: 10px;
+
+    &__head {
+      margin-top: 80px;
+    }
+  }
+  div {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: $smallest-break) {
+  .aboutContent {
+    div {
+      font-size: x-small;
     }
   }
 
-  // @media screen and (max-width: $mid-largeBreak) {
-  //   .linksSection{
-  //       margin-top: 80px;
-  //   }
-  // }
-
-  @media screen and (max-width: $medium-break) {
-    .linksSection{
-      margin-top: 10px;
-
-      &__head{
-        margin-top: 80px;
-      }
-  }
-    div{
-      font-size: small;
+  .linksSection {
+    &__head {
+      font-size: x-small;
     }
   }
-
-  @media screen and (max-width: $smallest-break) {
-    
-    .aboutContent {
-      div{
-        font-size: x-small;
-      }
-    }
-
-    .linksSection{
-      &__head{
-        font-size: x-small;
-      }
-    }
-  }
+}

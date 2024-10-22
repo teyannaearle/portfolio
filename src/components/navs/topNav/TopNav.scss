@@ -69,16 +69,13 @@
     -webkit-box-shadow: -1px 10px 15px -4px rgba(233, 211, 215, 0.2);
     box-shadow: -1px 10px 15px -4px rgba(233, 211, 215, 0.2);
 
-&-hidden{
-  display: none;
+    &-hidden {
+      display: none;
+    }
 
-}
-
-&__logo {
-  height: 70px;
-}
-
-
+    &__logo {
+      height: 70px;
+    }
 
     ul {
       margin: 0;

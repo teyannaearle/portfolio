@@ -1,52 +1,52 @@
 @import "../../styleUtils/variables.scss";
 
-.footer{
-    @include white-font;
-    background-color: $dark-blue;
-    height: 40px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    margin-top: 10px;
-    &__contactIcons{
-        display: none;
-    }
-
+.footer {
+  @include white-font;
+  background-color: $dark-blue;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-top: 10px;
+  &__contactIcons {
+    display: none;
+  }
 }
 
 // @media screen and (max-width: $medium-break) {
-    .footer{
-        // display: flex;
-        flex-direction: column;
-        justify-content: space-evenly; 
+.footer {
+  // display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-        &__contactIcons{
-            font-size: x-large;
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 0;
-            
-            li:first-child{
-                margin-left: 20px;
-            }
-            li {
-                margin-right: 20px;
-            }
-        
-            &:after, &:before {
-                content: "";
-                display: block;
-                width: 100%;
-                height: 1px;
-                background-color: $light-pink;
-            }
-        }
-        height: 80px;
+  &__contactIcons {
+    font-size: x-large;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+
+    li:first-child {
+      margin-left: 20px;
     }
+    li {
+      margin-right: 20px;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $light-pink;
+    }
+  }
+  height: 80px;
+}
 // }

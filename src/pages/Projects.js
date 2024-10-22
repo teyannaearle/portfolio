@@ -1,6 +1,8 @@
 import React from "react";
 import Project from "../components/project/Project";
-import Resume from "../components/resume/Resume";
+import LinksSectionProjects from "../components/navs/topNav/LinksSectionProjects";
+import { SiPostgresql, SiRedux, SiJavascript } from "react-icons/si";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import projectsData from "../data/projectsData";
 import {
   FaGitAlt,
@@ -9,19 +11,14 @@ import {
   FaHtml5,
   FaCss3Alt,
 } from "react-icons/fa";
-import { SiPostgresql, SiRedux, SiJavascript } from "react-icons/si";
-import { BsArrowLeft, BsArrowRight, BsArrowDown } from "react-icons/bs";
 import "./Projects.scss";
-import LinksSectionProjects from "../components/navs/topNav/LinksSectionProjects";
 
 function Projects() {
   return (
     <div className="projectPage">
       <LinksSectionProjects />
-      {/* <Resume /> */}
       <ul className="projectPage__skills">
-
-      <li>
+        <li>
           <FaGitAlt /> <br />
           git
         </li>
@@ -38,11 +35,6 @@ function Projects() {
           <SiRedux /> <br /> Redux
         </li>
 
-
-
-
-
-   
         <p>
           <BsArrowLeft /> Skills <BsArrowRight />
         </p>
@@ -64,49 +56,46 @@ function Projects() {
       </ul>
 
       <div className="projectPage__skills--smallView">
-        <h2>
-         Skills
-        </h2>
+        <h2>Skills</h2>
         <div>
-          <ul> 
-          <li>
-            <FaGitAlt /> <br />
-            git
-          </li>
-          <li>
-            {" "}
-            <FaNodeJs /> <br /> Node.js
-          </li>
-          <li>
-            {" "}
-            <SiPostgresql /> <br /> PostgreSQL
-          </li>
-          <li>
-            {" "}
-            <SiRedux /> <br /> Redux
-          </li>
+          <ul>
+            <li>
+              <FaGitAlt /> <br />
+              git
+            </li>
+            <li>
+              {" "}
+              <FaNodeJs /> <br /> Node.js
+            </li>
+            <li>
+              {" "}
+              <SiPostgresql /> <br /> PostgreSQL
+            </li>
+            <li>
+              {" "}
+              <SiRedux /> <br /> Redux
+            </li>
           </ul>
         </div>
         <div>
-          <ul> 
-          <li>
-            {" "}
-            <FaReact /> <br /> React
-          </li>
-          <li>
-            {" "}
-            <SiJavascript /> <br /> JavaScript
-          </li>
-          <li>
-            {" "}
-            <FaHtml5 /> <br /> HTML
-          </li>
-          <li>
-            <FaCss3Alt /> <br /> CSS
-          </li>
+          <ul>
+            <li>
+              {" "}
+              <FaReact /> <br /> React
+            </li>
+            <li>
+              {" "}
+              <SiJavascript /> <br /> JavaScript
+            </li>
+            <li>
+              {" "}
+              <FaHtml5 /> <br /> HTML
+            </li>
+            <li>
+              <FaCss3Alt /> <br /> CSS
+            </li>
           </ul>
         </div>
- 
       </div>
       <ul className="projectPage__container">
         {projectsData.map((project, i) => {

@@ -1,4 +1,4 @@
-@import  "../styleUtils/variables.scss" ;
+@import "../styleUtils/variables.scss";
 
 .projectPage {
   &__container {
@@ -7,8 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // animation: slide-in 2s forwards;
-    // visibility: hidden;
   }
 
   &__skills {
@@ -19,53 +17,44 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(1, 35, 86, 0.3);
-    // color: ivory;
     animation: slide-in 2s forwards;
     text-align: center;
-    // flex-wrap: wrap;
 
-    &--smallView{
+    &--smallView {
       display: none;
     }
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .projectPage{
+  .projectPage {
     &__skills {
       margin-top: 50px;
     }
   }
 }
 @media screen and (max-width: $large-break) {
-  .projectPage{ 
+  .projectPage {
     &__skills {
       display: none;
-  
-      &--smallView{
+
+      &--smallView {
         @include white-font;
         font-size: medium;
         width: 100%;
         margin: auto;
         margin-top: 7%;
         display: flex;
-        flex-direction: column;     
+        flex-direction: column;
         background-color: rgb(1, 35, 86, 0.3);
-        // align-items: center;
         text-align: center;
 
-        h2{
+        h2 {
           margin: 0;
           margin-top: 10px;
         }
 
-
-
-        ul{
-          // display: flex;
-          // align-items: center;
-          // text-align: center;
-          // justify-content: space-around;
+        ul {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
         }
@@ -81,14 +70,5 @@
       margin-left: 0;
       margin-top: 0;
     }
-    // &__skills {
-    //   display: none;
-    //   // margin-top: 60px;
-    //   // margin-bottom: 0;
-    //   // font-size: 16px;
-
-    
-    //   }
-    // }
   }
 }

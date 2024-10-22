@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { WatchScroll } from "../../../hooks/WatchScroll"
+import { WatchScroll } from "../../../hooks/WatchScroll";
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/Logo.png";
 import info from "../../../data/info.json";
@@ -8,23 +8,26 @@ import "./TopNav.scss";
 
 function TopNav() {
   const [active, setActive] = useState(false);
-  const { scrollDirection } = WatchScroll();  
+  const { scrollDirection } = WatchScroll();
 
-  useEffect(()=>{
-    if (scrollDirection ==="down"){
-      setActive(false)
+  useEffect(() => {
+    if (scrollDirection === "down") {
+      setActive(false);
     }
-  },[scrollDirection])
-
+  }, [scrollDirection]);
 
   return (
-    <div className={scrollDirection ==="up" ?  "topNav topNav-hidden" : "topNav"}>
+    <div
+      className={scrollDirection === "up" ? "topNav topNav-hidden" : "topNav"}
+    >
       <Link to="/" className="topNav__logo" onClick={() => setActive(false)}>
         {" "}
         <img src={Logo} alt="logo" />{" "}
       </Link>
       <div
-        className={active ? "topNav__openMenuIcon" : "topNav__collapsedMenuIcon"}
+        className={
+          active ? "topNav__openMenuIcon" : "topNav__collapsedMenuIcon"
+        }
         onClick={() => setActive(!active)}
       >
         {active ? <ImMenu4 /> : <ImMenu3 />}
@@ -35,8 +38,10 @@ function TopNav() {
         <ul>
           {info.map((item, key) => {
             return (
-              <li key={key}className="topNav__listItems">
-                <Link  onClick={() => setActive(false)}  to={item.url}>{item.text}</Link>
+              <li key={key} className="topNav__listItems">
+                <Link onClick={() => setActive(false)} to={item.url}>
+                  {item.text}
+                </Link>
               </li>
             );
           })}

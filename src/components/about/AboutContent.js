@@ -1,14 +1,11 @@
 import React from "react";
-import "./AboutContent.scss";
 import aboutPicture from "../../assets/TeyBlue-3.png";
+import "./AboutContent.scss";
 
 function AboutContent() {
   return (
     <div className="aboutContent">
       <img src={aboutPicture} alt="teyanna" className="aboutContent__pic" />
-      {/* <div>
-        <h2> Full Stack Web Dev | Wellness Fanatic &nbsp;</h2>
-      </div> */}
       <ul>
         <li className="aboutContent__question">Where am I from ?</li>
         <p className="aboutContent__answer">
@@ -26,7 +23,7 @@ function AboutContent() {
         </p>
 
         <li className="aboutContent__question">What is my mission ?</li>
-         <p className="aboutContent__answer">
+        <p className="aboutContent__answer">
           &emsp; Bridging the gap between my interests in tech and personal
           development, I’m passionate about creating solutions that inspire
           growth and wellness for individuals of all ages. My journey in web

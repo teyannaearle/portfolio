@@ -3,10 +3,10 @@
 
 $courgette: "Courgette", cursive;
 $herr: "Herr Von Muellerhoff", cursive;
-@mixin white-font{
+@mixin white-font {
   font-family: serif;
   color: ivory;
-}  
+}
 
 $dark-blue: #010920;
 // $light-blue: rgb(1, 35, 86, 0.3);
@@ -22,7 +22,7 @@ $medium-break: 600px;
 $smallest-break: 450px;
 
 @mixin top-pg-links {
-  grid-column: 1 /span 2;
+  grid-column: 1 / span 2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -31,17 +31,16 @@ $smallest-break: 450px;
   margin-bottom: 30px;
   margin-left: 10%;
 
-  &:after{
-      content: "";
-      width: 30%;
-      height: 1px;
-      background-color: $light-pink;
-      display: inline-block;
-      margin-left: 20px;
-      margin-right: 20px;
+  &:after {
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: $light-pink;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
-
 
 @keyframes fade-in {
   from {
@@ -52,9 +51,13 @@ $smallest-break: 450px;
   }
 }
 
-
 @keyframes slide-in {
-  from {margin-left: 150%; width: 100%; visibility: hidden;}
-  to { visibility: visible; }
-  
+  from {
+    margin-left: 150%;
+    width: 100%;
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
 }

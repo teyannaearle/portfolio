@@ -119,10 +119,10 @@
   }
 }
 
-@media screen and (max-width: 400px){
-  .projectsLink{
-      &:after{
-          width: 20%;
-      }
+@media screen and (max-width: 400px) {
+  .projectsLink {
+    &:after {
+      width: 20%;
+    }
   }
 }

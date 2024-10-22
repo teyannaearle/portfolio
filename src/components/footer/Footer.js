@@ -5,7 +5,6 @@ import "./Footer.scss";
 function Footer() {
   return (
     <div className="footer">
-
       <ul className="footer__contactIcons">
         {contact.map((item, key) => {
           return (
@@ -18,7 +17,6 @@ function Footer() {
         })}
       </ul>
       Designed and Built by Téyanna Earle
-      
     </div>
   );
 }

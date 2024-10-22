@@ -1,7 +1,7 @@
 // import youtubeGif from "../assets/youtube.gif";
 // import bodegaGif from "../assets/bodega.gif";
 import eventfulGif from "../assets/eventful.gif";
-import calcGif from "../assets/calcGiphy1.gif"
+import calcGif from "../assets/calcGiphy1.gif";
 
 const projectsData = [
   {
@@ -9,20 +9,31 @@ const projectsData = [
 
     caption:
       "A full stack application. The Event(ful) app is a one-stop shop for your vendor-booking organization. Save time and reduce the stress of planning an event by using this site to search for and favorite vendors that you need, while keeping track of the vendors you’ve booked and your budget, all in one place! ",
-    technologies: ["NodeJS", "Express", "PostgreSQL", "Firebase", "React", "CSS", "Toastify" , "Netlify", "Heroku" ],
+    technologies: [
+      "NodeJS",
+      "Express",
+      "PostgreSQL",
+      "Firebase",
+      "React",
+      "CSS",
+      "Toastify",
+      "Netlify",
+      "Heroku",
+    ],
     alt: "event planning app giphy",
     title: "Event(ful)",
     githubLink: "https://github.com/teyannaearle/Event-ful",
-    siteLink: "https://eventful-application.netlify.app/"
-  }, 
+    siteLink: "https://eventful-application.netlify.app/",
+  },
   {
     src: calcGif,
-    caption:"A basic React calculator. Add, subtract, multiply and divide to your heart's content.",
+    caption:
+      "A basic React calculator. Add, subtract, multiply and divide to your heart's content.",
     technologies: ["React", "CSS", "Netlify"],
-    title:"React Calculator",
-    githubLink:"https://github.com/teyannaearle/react_calculator",
-    siteLink:"https://teyannas-calculator.netlify.app/"
-  }
+    title: "React Calculator",
+    githubLink: "https://github.com/teyannaearle/react_calculator",
+    siteLink: "https://teyannas-calculator.netlify.app/",
+  },
   // {
   //   src: bodegaGif,
   //   caption: "A full stack application. Users are able to perform full CRUD actions to add, edit, update and delete items from the online store.",
