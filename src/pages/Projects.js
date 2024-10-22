@@ -20,25 +20,8 @@ function Projects() {
       <LinksSectionProjects />
       {/* <Resume /> */}
       <ul className="projectPage__skills">
-        <li>
-          {" "}
-          <FaReact /> <br /> React
-        </li>
-        <li>
-          {" "}
-          <SiJavascript /> <br /> JavaScript
-        </li>
-        <li>
-          {" "}
-          <FaHtml5 /> <br /> HTML
-        </li>
-        <li>
-          <FaCss3Alt /> <br /> CSS
-        </li>
-        <p>
-          <BsArrowLeft /> Skills <BsArrowRight />
-        </p>
-        <li>
+
+      <li>
           <FaGitAlt /> <br />
           git
         </li>
@@ -53,6 +36,30 @@ function Projects() {
         <li>
           {" "}
           <SiRedux /> <br /> Redux
+        </li>
+
+
+
+
+
+   
+        <p>
+          <BsArrowLeft /> Skills <BsArrowRight />
+        </p>
+        <li>
+          {" "}
+          <FaReact /> <br /> React
+        </li>
+        <li>
+          {" "}
+          <SiJavascript /> <br /> JavaScript
+        </li>
+        <li>
+          {" "}
+          <FaHtml5 /> <br /> HTML
+        </li>
+        <li>
+          <FaCss3Alt /> <br /> CSS
         </li>
       </ul>
 

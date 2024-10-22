@@ -17,7 +17,7 @@ function Footer() {
           );
         })}
       </ul>
-      Designed and Built by Té-yanna Earle
+      Designed and Built by Téyanna Earle
       
     </div>
   );
