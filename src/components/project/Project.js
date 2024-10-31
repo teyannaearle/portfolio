@@ -12,9 +12,9 @@ function Project({ project }) {
           <a href={project.githubLink} target="_blank" rel="noreferrer">
             <FiGithub />
           </a>
-          <a href={project.siteLink} target="_blank" rel="noreferrer">
+          {/* <a href={project.siteLink} target="_blank" rel="noreferrer">
             <HiExternalLink />
-          </a>
+          </a> */}
         </span>
       </div>
 
